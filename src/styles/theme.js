@@ -1,0 +1,128 @@
+import { lighten, darken } from './colorManipulator';
+import { spacing } from './utils';
+
+export const BREAKPOINTS = {
+	extraSmall: 320,
+	mobile: 576,
+	tablet: 768,
+	laptop: 992,
+	desktop: 1200,
+};
+
+export const ZINDEX = {
+	base: 100,
+	modal: 200,
+	spinner: 300,
+};
+
+const COLOR_OFFSETTING = 0.3;
+
+const PALETTE_COLOR_LIGHT = {
+	primary: '#c6d4d3',
+	secondary: '#b42727',
+	text: '#0d0d0d',
+	accent: '#7636ab',
+	button: '#871a26',
+};
+
+const PALETTE_COLOR_DARK = {
+	primary: '#0d0d0d',
+	secondary: '#b42727',
+	text: '#c6d4d3',
+	accent: '#7636ab',
+	button: '#ededed',
+};
+
+export const themeLight = {
+	palette: {
+		primary: {
+			main: PALETTE_COLOR_LIGHT.primary,
+			light: lighten(PALETTE_COLOR_LIGHT.primary, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.primary, COLOR_OFFSETTING),
+		},
+		secondary: {
+			main: PALETTE_COLOR_LIGHT.secondary,
+			light: lighten(PALETTE_COLOR_LIGHT.secondary, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.secondary, COLOR_OFFSETTING),
+		},
+		text: {
+			main: PALETTE_COLOR_LIGHT.text,
+			light: lighten(PALETTE_COLOR_LIGHT.text, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.text, COLOR_OFFSETTING),
+		},
+		accent: {
+			main: PALETTE_COLOR_LIGHT.accent,
+			light: lighten(PALETTE_COLOR_LIGHT.accent, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.accent, COLOR_OFFSETTING),
+		},
+		button: {
+			main: PALETTE_COLOR_LIGHT.button,
+			light: lighten(PALETTE_COLOR_LIGHT.button, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.button, COLOR_OFFSETTING),
+		},
+	},
+	mediaquery: {
+		mobile: `@media (max-width: ${BREAKPOINTS.tablet}px)`,
+		tablet: `@media (min-width: ${BREAKPOINTS.tablet}px) and (max-width: ${BREAKPOINTS.desktop}px)`,
+		desktop: `@media (min-width: ${BREAKPOINTS.desktop}px)`,
+	},
+	typography: {
+		fonts: {
+			bold: '/assets/fonts/Rubik-Bold.ttf',
+			italic: '/assets/fonts/Kiona-Italic.ttf',
+			regular: '/assets/fonts/Kiona-Regular.ttf',
+			semibold: '/assets/fonts/Rubik-Bold.ttf',
+		},
+	},
+	background: {
+		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019628049475584040/customwallpaper_white.jpg',
+	},
+	spacing,
+};
+
+export const themeDark = {
+	palette: {
+		primary: {
+			main: PALETTE_COLOR_DARK.primary,
+			light: lighten(PALETTE_COLOR_DARK.primary, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.primary, COLOR_OFFSETTING),
+		},
+		secondary: {
+			main: PALETTE_COLOR_DARK.secondary,
+			light: lighten(PALETTE_COLOR_DARK.secondary, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.secondary, COLOR_OFFSETTING),
+		},
+		text: {
+			main: PALETTE_COLOR_DARK.text,
+			light: lighten(PALETTE_COLOR_DARK.text, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.text, COLOR_OFFSETTING),
+		},
+		accent: {
+			main: PALETTE_COLOR_DARK.accent,
+			light: lighten(PALETTE_COLOR_DARK.accent, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.accent, COLOR_OFFSETTING),
+		},
+		button: {
+			main: PALETTE_COLOR_DARK.button,
+			light: lighten(PALETTE_COLOR_DARK.button, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.button, COLOR_OFFSETTING),
+		},
+	},
+	mediaquery: {
+		mobile: `@media (max-width: ${BREAKPOINTS.tablet}px)`,
+		tablet: `@media (min-width: ${BREAKPOINTS.tablet}px) and (max-width: ${BREAKPOINTS.desktop}px)`,
+		desktop: `@media (min-width: ${BREAKPOINTS.desktop}px)`,
+	},
+	typography: {
+		fonts: {
+			bold: '/assets/fonts/Rubik-Bold.ttf',
+			italic: '/assets/fonts/Kiona-Italic.ttf',
+			regular: '/assets/fonts/Kiona-Regular.ttf',
+			semibold: '/assets/fonts/Rubik-Bold.ttf',
+		},
+	},
+	background: {
+		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019678367198494740/customwallpaper.jpg',
+	},
+	spacing,
+};

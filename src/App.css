@@ -1,0 +1,23 @@
+/* ------- HEADER ------- */
+
+.Logo {
+	height: 100%;
+	padding-left: 20px;
+}
+
+.HeaderList {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.BtnHeader {
+	width: 243px;
+	display: flex;
+	gap: 10px;
+}
+
+.leftHeader {
+	display: flex;
+	align-items: center;
+}
