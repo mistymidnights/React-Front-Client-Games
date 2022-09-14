@@ -12,9 +12,7 @@ const ButtonWrapper = styled.button(({ variant, height, width, theme }) => ({
 	// margin: theme.spacing(2),
 
 	...variant,
-	[`${theme.mediaquery.tablet}`]: {
-		margin: theme.spacing(2),
-	},
+	[`${theme.mediaquery.tablet}`]: {},
 	[`${theme.mediaquery.desktop}`]: {},
 }));
 

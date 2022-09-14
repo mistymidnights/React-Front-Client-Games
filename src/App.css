@@ -12,9 +12,10 @@
 }
 
 .BtnHeader {
-	width: 243px;
+	width: 267px;
 	display: flex;
 	gap: 10px;
+	align-items: center;
 }
 
 .leftHeader {

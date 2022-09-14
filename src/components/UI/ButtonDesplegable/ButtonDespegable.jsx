@@ -1,28 +1,25 @@
 import { useTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 
-const ButtonWrapperDesplegable = styled.button(({ theme }) => ({
+const ButtonWrapperDesplegable = styled.button(({ theme, height, width }) => ({
 	cursor: 'pointer',
 	borderRadius: '50%',
-	width: '50px',
-	height: '50px',
+	width: width,
+	height: height,
 	backgroundColor: theme.palette.button.main,
 	border: 'none',
+	position: 'relative',
 	// height: theme.spacing(6),
 	// margin: theme.spacing(2),
-	[`${theme.mediaquery.tablet}`]: {
-		margin: theme.spacing(4),
-	},
-	[`${theme.mediaquery.desktop}`]: {
-		margin: theme.spacing(6),
-	},
+	[`${theme.mediaquery.tablet}`]: {},
+	[`${theme.mediaquery.desktop}`]: {},
 }));
 
-const ButtonDespegable = ({ children }) => {
+const ButtonDespegable = ({ children, height, width }) => {
 	const theme = useTheme();
 
 	return (
-		<ButtonWrapperDesplegable theme={theme}>
+		<ButtonWrapperDesplegable theme={theme} height={height} width={width}>
 			{children}
 		</ButtonWrapperDesplegable>
 	);
