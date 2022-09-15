@@ -5,6 +5,8 @@ import { createTheme } from './styles/utils';
 import { themeLight, themeDark } from './styles/theme';
 import './App.css';
 import Header from './components/Header/Header';
+import HeroOne from './components/HeroOne/HeroOne';
+import HeroTwo from './components/HeroTwo/HeroTwo';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -17,6 +19,8 @@ function App() {
 		<ThemeProvider theme={createTheme(themePovide)}>
 			<GlobalStyles />
 			<Header toggleTheme={toggleTheme} />
+			<HeroOne />
+			<HeroTwo />
 		</ThemeProvider>
 	);
 }

@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'Rubik';
+	src: url('/assets/fonts/Rubik-Bold.ttf');
+}
+@font-face {
+	font-family: 'Kiona Italic';
+	src: url('/assets/fonts/Kiona-Italic.ttf');
+}
+@font-face {
+	font-family: 'Kiona';
+	src: url('/assets/fonts/Kiona-Regular.ttf');
+}
+
 /* ------- HEADER ------- */
 
 .Logo {
@@ -21,4 +34,39 @@
 .leftHeader {
 	display: flex;
 	align-items: center;
+}
+/* ----------- HAMBURGER ---------- */
+
+/* --------- HERO ONE ---------- */
+
+.HeroOneImage {
+	width: 100%;
+	/* position: absolute;
+	right: -84px; */
+}
+
+.HeromImgContainer {
+	display: flex;
+	height: 800px;
+}
+
+.HeroTitle {
+	width: 500px;
+}
+.HeroTitle h2 {
+	font-size: 35px;
+	font-family: 'Rubik';
+}
+
+.HeroImage {
+	width: 625px;
+}
+
+/* ----------- HERO TWO ----------- */
+.TitleHeroTwo {
+	font-family: 'Rubik';
+}
+
+.imgGamesContnainer {
+	width: 100px;
 }

@@ -41,6 +41,10 @@ const getMediumVariant = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
 
 const getLargeVariant = theme => ({
@@ -49,6 +53,10 @@ const getLargeVariant = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
 
 const getExtralargeVariant = theme => ({
@@ -57,6 +65,10 @@ const getExtralargeVariant = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
 
 // -------- SECONND ----------
@@ -81,6 +93,10 @@ const getMediumVariantSecond = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
 
 const getLargeVariantSecond = theme => ({
@@ -89,6 +105,10 @@ const getLargeVariantSecond = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
 
 const getExtralargeVariantSecond = theme => ({
@@ -97,4 +117,8 @@ const getExtralargeVariantSecond = theme => ({
 	borderRadius: theme.spacing(1.5),
 	border: 'none',
 	padding: '5px',
+	fontFamily: 'Bold',
+	'&:hover': {
+		backgroundColor: 'grey',
+	},
 });
