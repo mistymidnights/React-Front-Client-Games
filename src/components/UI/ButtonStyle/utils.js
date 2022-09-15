@@ -29,7 +29,7 @@ const getSmallVariant = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: 'grey',
+		backgroundColor: theme.palette.accentSecond.main,
 	},
 });
 // cambiar fuente

@@ -8,6 +8,8 @@ const ButtonWrapper = styled.button(({ variant, height, width, theme }) => ({
 	cursor: 'pointer',
 	height: height,
 	width: width,
+	color: theme.palette.text.main,
+
 	// height: theme.spacing(6),
 	// margin: theme.spacing(2),
 

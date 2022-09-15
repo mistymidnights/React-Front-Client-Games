@@ -3,7 +3,7 @@ import { HeroFAQ } from './FAQ.element';
 
 const FAQ = () => {
 	return (
-		<HeroFAQ>
+		<HeroFAQ className='HeroFAQ'>
 			<div className='columnFAQ'>
 				<ul>
 					<li>Prueba</li>

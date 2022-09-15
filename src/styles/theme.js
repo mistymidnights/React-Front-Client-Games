@@ -22,6 +22,7 @@ const PALETTE_COLOR_LIGHT = {
 	secondary: '#b42727',
 	text: '#0d0d0d',
 	accent: '#7636ab',
+	accentSecond: 'rgba(255, 255, 255, 0.50)',
 	button: '#871a26',
 };
 
@@ -30,6 +31,7 @@ const PALETTE_COLOR_DARK = {
 	secondary: '#b42727',
 	text: '#c6d4d3',
 	accent: '#7636ab',
+	accentSecond: 'rgba(0, 0, 0, 0.63)',
 	button: '#ededed',
 };
 
@@ -60,6 +62,11 @@ export const themeLight = {
 			light: lighten(PALETTE_COLOR_LIGHT.button, COLOR_OFFSETTING),
 			dark: darken(PALETTE_COLOR_LIGHT.button, COLOR_OFFSETTING),
 		},
+		accentSecond: {
+			main: PALETTE_COLOR_LIGHT.accentSecond,
+			light: lighten(PALETTE_COLOR_LIGHT.accentSecond, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.accentSecond, COLOR_OFFSETTING),
+		},
 	},
 	mediaquery: {
 		mobile: `@media (max-width: ${BREAKPOINTS.tablet}px)`,
@@ -78,7 +85,7 @@ export const themeLight = {
 		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019628049475584040/customwallpaper_white.jpg',
 	},
 	logo: {
-		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019955336750317619/Akira-PNG.png',
+		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019990186010099742/Akira-PNG.png',
 	},
 	spacing,
 };
@@ -109,6 +116,11 @@ export const themeDark = {
 			main: PALETTE_COLOR_DARK.button,
 			light: lighten(PALETTE_COLOR_DARK.button, COLOR_OFFSETTING),
 			dark: darken(PALETTE_COLOR_DARK.button, COLOR_OFFSETTING),
+		},
+		accentSecond: {
+			main: PALETTE_COLOR_DARK.accentSecond,
+			light: lighten(PALETTE_COLOR_DARK.accentSecond, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.accentSecond, COLOR_OFFSETTING),
 		},
 	},
 	mediaquery: {

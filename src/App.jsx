@@ -26,7 +26,7 @@ function App() {
 			<HeroTwo />
 			<HeroThre />
 			<FAQ />
-			<Footer />
+			<Footer height={'30px'} width={'30px'} />
 		</ThemeProvider>
 	);
 }

@@ -22,6 +22,7 @@
 	list-style: none;
 	display: flex;
 	gap: 20px;
+	font-weight: bold;
 }
 
 .BtnHeader {
@@ -40,9 +41,18 @@
 	position: relative;
 }
 
+@media (max-width: 1142px) {
+	.HeaderList {
+		display: none;
+	}
+}
 /* ----------- HAMBURGER ---------- */
 
 /* --------- HERO ONE ---------- */
+
+.HeroTwoo {
+	z-index: 5;
+}
 
 .HeroOneImage {
 	width: 100%;
@@ -66,8 +76,35 @@
 .HeroImage {
 	width: 625px;
 }
+@media (max-width: 1142px) {
+	.CardPostHero {
+		flex-direction: column;
+	}
+	.rightPosts {
+		display: flex;
+	}
+	.css-1041dmj-HeroOnee {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.HeroLeftContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
 
 /* ----------- HERO TWO ----------- */
+.titleWBtn {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .TitleHero {
 	font-family: 'Kiona';
 	font-size: 35px;
@@ -83,6 +120,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .cardGames {
@@ -93,6 +131,13 @@
 }
 
 .CardPostHero {
+	display: flex;
+	gap: 20px;
+	padding: 20px 20px 20px 0px;
+	align-items: center;
+}
+
+.CardPostHero2 {
 	display: flex;
 	gap: 20px;
 	padding: 20px 20px 20px 0px;
@@ -114,11 +159,8 @@
 
 .rightPosts {
 	display: flex;
-}
-
-.rightPosts {
-	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .columRight {
@@ -127,6 +169,50 @@
 	flex-direction: column;
 }
 
+.marioImg {
+	width: 300px;
+	position: absolute;
+	left: -204px;
+	transform: rotate(17deg);
+	z-index: 2;
+}
+
+@media (max-width: 1142px) {
+	#game5Hero {
+		display: none;
+	}
+	#game1Hero {
+		display: none;
+	}
+
+	.titleWBtn {
+		width: 500px;
+	}
+	.columRight {
+		flex-direction: row;
+		gap: 10px;
+		justify-content: center;
+	}
+	.css-bv1s49-HeroTwoContainer {
+		height: 1130px;
+	}
+	.CardPostHero2 {
+		flex-direction: column;
+	}
+	.css-1fyntsy-ImageWrapper {
+		height: 369px;
+	}
+	.youtubePlayer {
+		width: 506px;
+	}
+	.youtubeMini {
+		width: 246px;
+		border-radius: 10px;
+	}
+	.css-ykmf88-HeroThreeContainer {
+		height: 792px;
+	}
+}
 /* --------- HERO 3 ----------- */
 
 .youtubePlayer {
@@ -137,4 +223,10 @@
 
 .column1 {
 	display: flex;
+}
+
+/* ---------- BOTONES ---------- */
+
+.Play {
+	z-index: 10;
 }

@@ -10,7 +10,7 @@ export const HeroThreeContainer = styled.div`
 
 export const HeroThree = styled.div`
 	width: 80%;
-	height: 696px;
+	height: 659px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

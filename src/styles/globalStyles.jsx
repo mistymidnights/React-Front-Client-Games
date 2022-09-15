@@ -10,11 +10,19 @@ const GlobalStyles = () => {
 					'*': {
 						fontFamily: 'Regular',
 						boxSizing: 'border-box',
+						transition: 'all 0.2s ease',
 					},
 					'.logo': {
 						backgroundImage: `url(${theme.logo.main})`,
 						backgroundSize: 'cover',
 						backgroundRepeat: 'no-repeat',
+					},
+					'.HeroFooter': {
+						backgroundColor: theme.palette.primary.main,
+					},
+					'.HeroFAQ': {
+						backgroundColor: theme.palette.accentSecond.main,
+						color: theme.palette.text.main,
 					},
 					'html,body': {
 						padding: 0,
