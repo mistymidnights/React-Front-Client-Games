@@ -7,17 +7,19 @@ import {
 } from './Header.element';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
-import ImageCustom from '../UI/ImageCustom/ImageCustom';
 import { BsPlayFill } from 'react-icons/bs';
+import H1Custom from '../UI/H1Custom/H1Custom';
 
 const Header = ({ toggleTheme }) => {
 	return (
 		<HeaderContainer>
 			<HeaderElement>
 				<div className='leftHeader'>
-					<LogoContainer>
-						<img className='Logo' src='Akira-PNG.png' alt='logo' />
+					<LogoContainer className='logo'>
+						{/* <img className='Logo' src='Akira-PNG.png' alt='logo' /> */}
 					</LogoContainer>
+				</div>
+				<div className='BtnHeader'>
 					<ul className='HeaderList'>
 						<li>Home</li>
 						<li>Games</li>
@@ -25,12 +27,10 @@ const Header = ({ toggleTheme }) => {
 						<li>Podcast</li>
 						<li>Chat</li>
 					</ul>
-				</div>
-				<div className='BtnHeader'>
 					<ButtonDespegable height={'30px'} width={'40px'}>
-						<ImageCustom top={'6px'} left={'6px'}>
+						<H1Custom>
 							<BsPlayFill />
-						</ImageCustom>
+						</H1Custom>
 					</ButtonDespegable>
 					<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
 						Log in
@@ -42,45 +42,6 @@ const Header = ({ toggleTheme }) => {
 						<div onClick={toggleTheme}>Change Theme</div>
 					</ButtonStyle>
 				</div>
-
-				<input type='checkbox' id='myInput' />
-				<label htmlFor='myInput'>
-					<span className='bar top'></span>
-					<span className='bar middle'></span>
-					<span className='bar bottom'></span>
-				</label>
-				<aside>
-					<div className='aside-section aside-left'>
-						<div className='aside-content'>
-							<p> Some text that will make you click the cta </p>
-							<button className='button'> CTA </button>
-						</div>
-					</div>
-					<div className='aside-section aside-right'>
-						<ul className='aside-list'>
-							<li>
-								<a href='' className='aside-anchor'>
-									Link
-								</a>
-							</li>
-							<li>
-								<a href='' className='aside-anchor'>
-									Link
-								</a>
-							</li>
-							<li>
-								<a href='' className='aside-anchor'>
-									Link
-								</a>
-							</li>
-							<li>
-								<a href='' className='aside-anchor'>
-									Link
-								</a>
-							</li>
-						</ul>
-					</div>
-				</aside>
 			</HeaderElement>
 		</HeaderContainer>
 	);

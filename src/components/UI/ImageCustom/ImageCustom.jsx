@@ -8,6 +8,9 @@ const IconWrapper = styled.h2(({ theme, top, left }) => ({
 	top: top,
 	left: left,
 
+	[`${theme.mediaquery.laptop}`]: {
+		left: theme.spacing(-2),
+	},
 	[`${theme.mediaquery.tablet}`]: {
 		left: theme.spacing(-2),
 	},

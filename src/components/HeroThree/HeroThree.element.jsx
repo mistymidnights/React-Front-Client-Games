@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 
-export const HeroTwoContainer = styled.div`
+export const HeroThreeContainer = styled.div`
 	width: 100%;
-	height: 1000px;
+	height: 800px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 `;
 
-export const HeroTwoo = styled.div`
+export const HeroThree = styled.div`
 	width: 80%;
-	height: 800px;
+	height: 696px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

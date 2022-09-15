@@ -11,6 +11,10 @@ const IconWrapper = styled.div(({ left, right, width, theme }) => ({
 	display: 'flex',
 	alignItems: 'center',
 
+	[`${theme.mediaquery.laptop}`]: {
+		// margin: theme.spacing(4),
+		left: theme.spacing(-2),
+	},
 	[`${theme.mediaquery.tablet}`]: {
 		// margin: theme.spacing(4),
 		left: theme.spacing(-2),

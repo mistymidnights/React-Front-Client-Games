@@ -9,6 +9,8 @@ const ButtonWrapperDesplegable = styled.button(({ theme, height, width }) => ({
 	backgroundColor: theme.palette.button.main,
 	border: 'none',
 	position: 'relative',
+	display: 'flex',
+	alignItems: 'center',
 	// height: theme.spacing(6),
 	// margin: theme.spacing(2),
 	[`${theme.mediaquery.tablet}`]: {},

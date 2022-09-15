@@ -18,8 +18,8 @@ export const HeaderElement = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-	height: 140px;
 	width: 140px;
+	height: 80px;
 `;
 
 export const listHeader = styled.ul`

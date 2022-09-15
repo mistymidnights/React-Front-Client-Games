@@ -77,6 +77,9 @@ export const themeLight = {
 	background: {
 		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019628049475584040/customwallpaper_white.jpg',
 	},
+	logo: {
+		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019955336750317619/Akira-PNG.png',
+	},
 	spacing,
 };
 
@@ -123,6 +126,9 @@ export const themeDark = {
 	},
 	background: {
 		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019678367198494740/customwallpaper.jpg',
+	},
+	logo: {
+		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019948376944558150/Akira-PNG-Isolated-File.png',
 	},
 	spacing,
 };

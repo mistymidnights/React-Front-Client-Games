@@ -11,6 +11,11 @@ const GlobalStyles = () => {
 						fontFamily: 'Regular',
 						boxSizing: 'border-box',
 					},
+					'.logo': {
+						backgroundImage: `url(${theme.logo.main})`,
+						backgroundSize: 'cover',
+						backgroundRepeat: 'no-repeat',
+					},
 					'html,body': {
 						padding: 0,
 						margin: 0,

@@ -25,7 +25,7 @@
 }
 
 .BtnHeader {
-	width: 267px;
+	width: 665px;
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -35,6 +35,11 @@
 	display: flex;
 	align-items: center;
 }
+
+.div-header {
+	position: relative;
+}
+
 /* ----------- HAMBURGER ---------- */
 
 /* --------- HERO ONE ---------- */
@@ -63,10 +68,73 @@
 }
 
 /* ----------- HERO TWO ----------- */
-.TitleHeroTwo {
-	font-family: 'Rubik';
+.TitleHero {
+	font-family: 'Kiona';
+	font-size: 35px;
 }
 
 .imgGamesContnainer {
-	width: 100px;
+	width: 180px;
+	border-radius: 10px;
+}
+
+.detailCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardGames {
+	display: flex;
+	gap: 38px;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+.CardPostHero {
+	display: flex;
+	gap: 20px;
+	padding: 20px 20px 20px 0px;
+	align-items: center;
+}
+
+.backTitlePostMAIN {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	margin-bottom: -17px;
+	padding-left: 20px;
+}
+
+.backTitlePost {
+	background-color: rgba(0, 0, 0, 0.63);
+	padding: 22px 0px 40px 22px;
+	color: white;
+}
+
+.rightPosts {
+	display: flex;
+}
+
+.rightPosts {
+	display: flex;
+	flex-direction: column;
+}
+
+.columRight {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* --------- HERO 3 ----------- */
+
+.youtubePlayer {
+	border-radius: 10px;
+}
+
+/* --------- FAQ ---------- */
+
+.column1 {
+	display: flex;
 }

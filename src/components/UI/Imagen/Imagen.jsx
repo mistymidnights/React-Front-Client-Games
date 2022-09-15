@@ -9,12 +9,13 @@ const ImageWrapper = styled('div')(({ width, height, aspectRatio }) => ({
 	height,
 }));
 
-const ImageStyled = styled('img')({
+const ImageStyled = styled('img')(({ borderRadius }) => ({
 	width: '100%',
 	height: '100%',
 	objectPosition: 'center',
 	objectFit: 'cover',
-});
+	borderRadius: borderRadius,
+}));
 
 const Imagen = ({ children, src, width, height, aspectRatio, ...rest }) => {
 	const [ratioH, ratioV] = aspectRatio

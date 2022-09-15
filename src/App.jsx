@@ -7,6 +7,9 @@ import './App.css';
 import Header from './components/Header/Header';
 import HeroOne from './components/HeroOne/HeroOne';
 import HeroTwo from './components/HeroTwo/HeroTwo';
+import HeroThre from './components/HeroThree/HeroThree';
+import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -21,6 +24,9 @@ function App() {
 			<Header toggleTheme={toggleTheme} />
 			<HeroOne />
 			<HeroTwo />
+			<HeroThre />
+			<FAQ />
+			<Footer />
 		</ThemeProvider>
 	);
 }
