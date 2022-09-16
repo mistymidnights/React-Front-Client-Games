@@ -42,7 +42,7 @@ const HeroOne = () => {
 				</H1Custom>
 			</ButtonDespegable>
 			<ButtonDespegable
-				className='Chat'
+				className='Bot'
 				position={'fixed'}
 				height={'50px'}
 				width={'50px'}

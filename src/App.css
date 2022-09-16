@@ -41,11 +41,6 @@
 	position: relative;
 }
 
-@media (max-width: 1142px) {
-	.HeaderList {
-		display: none;
-	}
-}
 /* ----------- HAMBURGER ---------- */
 
 /* --------- HERO ONE ---------- */
@@ -75,26 +70,6 @@
 
 .HeroImage {
 	width: 625px;
-}
-@media (max-width: 1142px) {
-	.CardPostHero {
-		flex-direction: column;
-	}
-	.rightPosts {
-		display: flex;
-	}
-	.css-1041dmj-HeroOnee {
-		flex-direction: column-reverse;
-		align-items: center;
-		justify-content: center;
-	}
-	.HeroLeftContainer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
 }
 
 /* ----------- HERO TWO ----------- */
@@ -177,6 +152,26 @@
 	z-index: 2;
 }
 
+/* --------- HERO 3 ----------- */
+
+.youtubePlayer {
+	border-radius: 10px;
+}
+
+/* --------- FAQ ---------- */
+
+.column1 {
+	display: flex;
+}
+
+/* ---------- BOTONES ---------- */
+
+.Play {
+	z-index: 10;
+}
+
+/* ---------- MEDIA QUERIES --------- */
+
 @media (max-width: 1142px) {
 	#game5Hero {
 		display: none;
@@ -199,9 +194,6 @@
 	.CardPostHero2 {
 		flex-direction: column;
 	}
-	.css-1fyntsy-ImageWrapper {
-		height: 369px;
-	}
 	.youtubePlayer {
 		width: 506px;
 	}
@@ -212,21 +204,81 @@
 	.css-ykmf88-HeroThreeContainer {
 		height: 792px;
 	}
+	.CardPostHero {
+		flex-direction: column;
+	}
+	.rightPosts {
+		display: flex;
+	}
+	.css-1041dmj-HeroOnee {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.HeroLeftContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.HeaderList {
+		display: none;
+	}
 }
-/* --------- HERO 3 ----------- */
 
-.youtubePlayer {
-	border-radius: 10px;
-}
+@media (max-width: 700px) {
+	.imgGamesContnainer {
+		width: 93px;
+	}
 
-/* --------- FAQ ---------- */
-
-.column1 {
-	display: flex;
-}
-
-/* ---------- BOTONES ---------- */
-
-.Play {
-	z-index: 10;
+	.css-rs5kus-ImageWrapper {
+		font-size: 14px;
+		width: 213px;
+		height: 130px;
+	}
+	.youtubePlayer {
+		width: 331px;
+		height: 200px;
+	}
+	.youtubeMini {
+		width: 160px;
+		height: 132px;
+	}
+	.CardPostHero {
+		width: 362px;
+		height: 426px;
+	}
+	.leftPosts div {
+		width: 340px;
+		height: 177px;
+	}
+	.backTitlePostMAIN {
+		font-size: 16px;
+		padding-left: 54px;
+	}
+	.backTitlePost {
+		display: none;
+	}
+	.titleWBtn {
+		width: 323px;
+	}
+	.HeroTitle {
+		width: 288px;
+	}
+	.TitleHero {
+		text-align: center;
+	}
+	.HeroImage {
+		width: 370px;
+	}
+	.css-bv1s49-HeroTwoContainer {
+		height: 778px;
+	}
+	.css-ykmf88-HeroThreeContainer {
+		height: 548px;
+	}
+	.columnFAQ {
+		font-size: 12px;
+	}
 }

@@ -11,6 +11,7 @@ const GlobalStyles = () => {
 						fontFamily: 'Regular',
 						boxSizing: 'border-box',
 						transition: 'all 0.2s ease',
+						margin: 0,
 					},
 					'.logo': {
 						backgroundImage: `url(${theme.logo.main})`,
@@ -24,6 +25,7 @@ const GlobalStyles = () => {
 						backgroundColor: theme.palette.accentSecond.main,
 						color: theme.palette.text.main,
 					},
+
 					'html,body': {
 						padding: 0,
 						margin: 0,
