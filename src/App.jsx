@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Game from './Pages/Game/Game';
 import Home from './Pages/Homee/Home';
 import GameFree from './Pages/Game/GameFree';
-import GameDetail from './Pages/GameDetail/GameDetail';
+import Articulo from './Pages/Articulo/Articulo';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -27,8 +27,9 @@ function App() {
 				<Routes>
 					<Route path='/home' element={<Home />} />
 					<Route path='/game' element={<Game />} />
-					<Route path='/game/:id' element={<GameDetail />} />
+					{/* <Route path='/game/:id' element={<GameDetail />} /> */}
 					<Route path='/freetoplay' element={<GameFree />} />
+					<Route path='/posts' element={<Articulo />} />
 				</Routes>
 				<Footer height={'30px'} width={'30px'} />
 			</Router>

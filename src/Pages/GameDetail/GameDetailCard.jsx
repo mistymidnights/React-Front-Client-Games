@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import ButtonStyle from '../../components/UI/ButtonStyle/Button';
 import '../../Games.css';
-import { GamesContainerCard } from './Game.element';
+import { GamesContainerCard } from '../Game/Game.element';
 
-const GameCard = ({ game }) => {
+const GameDetailCard = ({ game }) => {
 	return (
 		<GamesContainerCard className='game_card'>
 			<div className='profile_img_container'>
@@ -25,11 +25,11 @@ const GameCard = ({ game }) => {
 				)}
 				{!game.year ? <h3>Not launched</h3> : <h3>{game.year}</h3>}
 				<ButtonStyle variant={'small'}>
-					<Link to={`/juego/${game._id}`}>More...</Link>
+					<Link to={`/juego/free/${game._id}`}>More...</Link>
 				</ButtonStyle>
 			</div>
 		</GamesContainerCard>
 	);
 };
 
-export default GameCard;
+export default GameDetailCard;

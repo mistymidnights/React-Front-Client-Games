@@ -35,6 +35,12 @@ const GlobalStyles = () => {
 					'.LinkBtn': {
 						fontFamily: 'Bold',
 					},
+					'.articulo_card': {
+						backgroundColor: theme.palette.backgroundCard.main,
+						width: '90%',
+						display: 'flex',
+						alignItems: 'center',
+					},
 
 					'html,body': {
 						padding: 0,

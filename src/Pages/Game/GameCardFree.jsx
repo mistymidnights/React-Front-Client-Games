@@ -21,7 +21,11 @@ const GameCardFree = ({ game }) => {
 				)}
 			</div>
 			<div className='content_container'>
-				{!game.title ? <h2>No name</h2> : <h2>{game.title}</h2>}
+				{!game.title ? (
+					<h2 className='titleCardFree'>No name</h2>
+				) : (
+					<h2 className='titleCardFree'>{game.title}</h2>
+				)}
 				{!game.genre ? (
 					<h3 className='typeGameText'>No type</h3>
 				) : (
