@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
 	HeaderContainer,
 	HeaderElement,
@@ -9,15 +7,16 @@ import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
 import { BsPlayFill } from 'react-icons/bs';
 import H1Custom from '../UI/H1Custom/H1Custom';
+import { Link } from 'react-router-dom';
 
 const Header = ({ toggleTheme }) => {
 	return (
 		<HeaderContainer>
 			<HeaderElement>
 				<div className='leftHeader'>
-					<LogoContainer className='logo'>
-						{/* <img className='Logo' src='Akira-PNG.png' alt='logo' /> */}
-					</LogoContainer>
+					<Link to={'/home'}>
+						<LogoContainer className='logo'></LogoContainer>
+					</Link>
 				</div>
 				<div className='BtnHeader'>
 					<ul className='HeaderList'>

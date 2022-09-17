@@ -5,11 +5,12 @@ import { createTheme } from './styles/utils';
 import { themeLight, themeDark } from './styles/theme';
 import './App.css';
 import Header from './components/Header/Header';
-import HeroOne from './components/HeroOne/HeroOne';
-import HeroTwo from './components/HeroTwo/HeroTwo';
-import HeroThre from './components/HeroThree/HeroThree';
-import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Game from './Pages/Game/Game';
+import Home from './Pages/Homee/Home';
+import GameFree from './Pages/Game/GameFree';
+import GameDetail from './Pages/GameDetail/GameDetail';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -21,12 +22,16 @@ function App() {
 	return (
 		<ThemeProvider theme={createTheme(themePovide)}>
 			<GlobalStyles />
-			<Header toggleTheme={toggleTheme} />
-			<HeroOne />
-			<HeroTwo />
-			<HeroThre />
-			<FAQ />
-			<Footer height={'30px'} width={'30px'} />
+			<Router>
+				<Header toggleTheme={toggleTheme} />
+				<Routes>
+					<Route path='/home' element={<Home />} />
+					<Route path='/game' element={<Game />} />
+					<Route path='/game/:id' element={<GameDetail />} />
+					<Route path='/freetoplay' element={<GameFree />} />
+				</Routes>
+				<Footer height={'30px'} width={'30px'} />
+			</Router>
 		</ThemeProvider>
 	);
 }

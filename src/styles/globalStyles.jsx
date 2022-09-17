@@ -25,6 +25,16 @@ const GlobalStyles = () => {
 						backgroundColor: theme.palette.accentSecond.main,
 						color: theme.palette.text.main,
 					},
+					// games//
+					'.typeGameText': {
+						color: theme.palette.secondary.main,
+					},
+					'.game_card': {
+						backgroundColor: theme.palette.backgroundCard.main,
+					},
+					'.LinkBtn': {
+						fontFamily: 'Bold',
+					},
 
 					'html,body': {
 						padding: 0,

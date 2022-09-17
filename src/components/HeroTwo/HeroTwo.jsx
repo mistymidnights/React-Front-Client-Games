@@ -73,6 +73,7 @@ const HeroTwo = () => {
 							}
 							aspectRatio={'16:9'}
 							height={'370px'}
+							width={'650px'}
 							borderRadius={'15px'}
 						>
 							<div style={{ top: '60%', left: '0' }}>

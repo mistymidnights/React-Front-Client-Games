@@ -3,7 +3,7 @@ import { HeroOneContainer, HeroOnee } from './HeroOne.element';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
 import H1Custom from '../UI/H1Custom/H1Custom';
-import { BsPlayFill, BsFillMusicPlayerFill } from 'react-icons/bs';
+import { BsFillMusicPlayerFill } from 'react-icons/bs';
 import { MdHelp } from 'react-icons/md';
 import { FiRadio } from 'react-icons/fi';
 

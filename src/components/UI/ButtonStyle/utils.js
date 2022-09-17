@@ -1,5 +1,4 @@
 export const getVariants = (theme, variant) => {
-	console.log(theme);
 	switch (variant) {
 		case 'small':
 			return getSmallVariant(theme);
@@ -29,7 +28,7 @@ const getSmallVariant = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: theme.palette.accentSecond.main,
+		backgroundColor: theme.palette.accent.main,
 	},
 });
 // cambiar fuente
@@ -81,7 +80,7 @@ const getSmallVariantSecond = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: 'grey',
+		backgroundColor: theme.palette.accentSecond.main,
 	},
 });
 // cambiar fuente
@@ -95,7 +94,7 @@ const getMediumVariantSecond = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: 'grey',
+		backgroundColor: theme.palette.accentSecond.main,
 	},
 });
 
@@ -107,7 +106,7 @@ const getLargeVariantSecond = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: 'grey',
+		backgroundColor: theme.palette.accentSecond.main,
 	},
 });
 
@@ -119,6 +118,6 @@ const getExtralargeVariantSecond = theme => ({
 	padding: '5px',
 	fontFamily: 'Bold',
 	'&:hover': {
-		backgroundColor: 'grey',
+		backgroundColor: theme.palette.accentSecond.main,
 	},
 });

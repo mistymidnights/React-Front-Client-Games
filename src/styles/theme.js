@@ -24,6 +24,7 @@ const PALETTE_COLOR_LIGHT = {
 	accent: '#7636ab',
 	accentSecond: 'rgba(255, 255, 255, 0.50)',
 	button: '#871a26',
+	backgroundCard: 'rgba(255, 255, 255, 0.38)',
 };
 
 const PALETTE_COLOR_DARK = {
@@ -33,6 +34,7 @@ const PALETTE_COLOR_DARK = {
 	accent: '#7636ab',
 	accentSecond: 'rgba(0, 0, 0, 0.63)',
 	button: '#ededed',
+	backgroundCard: '#00000073',
 };
 
 export const themeLight = {
@@ -67,6 +69,11 @@ export const themeLight = {
 			light: lighten(PALETTE_COLOR_LIGHT.accentSecond, COLOR_OFFSETTING),
 			dark: darken(PALETTE_COLOR_LIGHT.accentSecond, COLOR_OFFSETTING),
 		},
+		backgroundCard: {
+			main: PALETTE_COLOR_LIGHT.backgroundCard,
+			light: lighten(PALETTE_COLOR_LIGHT.backgroundCard, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_LIGHT.backgroundCard, COLOR_OFFSETTING),
+		},
 	},
 	mediaquery: {
 		mobile: `@media (max-width: ${BREAKPOINTS.tablet}px)`,
@@ -82,7 +89,7 @@ export const themeLight = {
 		},
 	},
 	background: {
-		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019628049475584040/customwallpaper_white.jpg',
+		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1020805053319217203/customwallpaperLARGEWHITE.jpg',
 	},
 	logo: {
 		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019990186010099742/Akira-PNG.png',
@@ -122,6 +129,11 @@ export const themeDark = {
 			light: lighten(PALETTE_COLOR_DARK.accentSecond, COLOR_OFFSETTING),
 			dark: darken(PALETTE_COLOR_DARK.accentSecond, COLOR_OFFSETTING),
 		},
+		backgroundCard: {
+			main: PALETTE_COLOR_DARK.backgroundCard,
+			light: lighten(PALETTE_COLOR_DARK.backgroundCard, COLOR_OFFSETTING),
+			dark: darken(PALETTE_COLOR_DARK.backgroundCard, COLOR_OFFSETTING),
+		},
 	},
 	mediaquery: {
 		mobile: `@media (max-width: ${BREAKPOINTS.tablet}px)`,
@@ -137,7 +149,7 @@ export const themeDark = {
 		},
 	},
 	background: {
-		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019678367198494740/customwallpaper.jpg',
+		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1020804029552541766/customwallpaperLARGE.jpg',
 	},
 	logo: {
 		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019948376944558150/Akira-PNG-Isolated-File.png',
