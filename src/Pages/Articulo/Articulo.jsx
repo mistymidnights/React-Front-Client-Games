@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { API } from '../../services/API';
 import '../../Games.css';
 import GameCard from './ArticuloCard';
-import { Link } from 'react-router-dom';
 import { HeroPost } from './Articulo.element';
 
 const Articulo = () => {

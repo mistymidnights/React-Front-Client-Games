@@ -13,7 +13,9 @@ const HeroOne = () => {
 			<HeroOnee>
 				<div className='HeroLeftContainer'>
 					<div className='HeroTitle'>
-						<h2>Join in and discover a new hole commuinty of videogames</h2>
+						<h2 className='titleHeroOne'>
+							Join in and discover a new hole commuinty of videogames
+						</h2>
 					</div>
 					<ButtonStyle variant={'extralargeSecond'} height={'50px'}>
 						{' '}

@@ -41,6 +41,9 @@ const GlobalStyles = () => {
 						display: 'flex',
 						alignItems: 'center',
 					},
+					'.plataforma_card': {
+						backgroundColor: theme.palette.backgroundCard.main,
+					},
 
 					'html,body': {
 						padding: 0,

@@ -11,6 +11,7 @@ import Game from './Pages/Game/Game';
 import Home from './Pages/Homee/Home';
 import GameFree from './Pages/Game/GameFree';
 import Articulo from './Pages/Articulo/Articulo';
+import Plataforma from './Pages/Plataforma/Plataforma';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -30,6 +31,7 @@ function App() {
 					{/* <Route path='/game/:id' element={<GameDetail />} /> */}
 					<Route path='/freetoplay' element={<GameFree />} />
 					<Route path='/posts' element={<Articulo />} />
+					<Route path='/platforms' element={<Plataforma />} />
 				</Routes>
 				<Footer height={'30px'} width={'30px'} />
 			</Router>
