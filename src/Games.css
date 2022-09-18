@@ -6,7 +6,7 @@
 }
 
 .imageCardGame {
-	width: 350px;
+	width: 369px;
 	border-radius: 7px;
 }
 
@@ -41,4 +41,11 @@
 
 .titleCardFree {
 	padding: 0px 40px 0px 40px;
+}
+
+/* ------------- PLATAFORMAS ---------------- */
+
+.imageCardPlataforma {
+	height: 300px;
+	border-radius: 10px;
 }
