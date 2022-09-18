@@ -5,7 +5,7 @@ import { darken } from './colorManipulator';
 const GlobalStyles = () => {
 	return (
 		<Global
-			styles={theme => [
+			styles={(theme) => [
 				{
 					'*': {
 						fontFamily: 'Regular',
@@ -73,6 +73,11 @@ const GlobalStyles = () => {
 					a: {
 						color: 'inherit',
 						textDecoration: 'none',
+					},
+					input: {
+						fontFamily: 'semiBold',
+						fontSize: '16px',
+						padding: '10px',
 					},
 				},
 				{

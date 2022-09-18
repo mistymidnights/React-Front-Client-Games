@@ -5,16 +5,18 @@ import {
 } from './Header.element';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
-import { BsPlayFill } from 'react-icons/bs';
+import { BsFillMusicPlayerFill, BsPlayFill } from 'react-icons/bs';
 import H1Custom from '../UI/H1Custom/H1Custom';
 import { Link } from 'react-router-dom';
+import { MdHelp } from 'react-icons/md';
+import { FiRadio } from 'react-icons/fi';
 
 const Header = ({ toggleTheme }) => {
 	return (
 		<HeaderContainer>
 			<HeaderElement>
 				<div className='leftHeader'>
-					<Link to={'/home'}>
+					<Link to={'/'}>
 						<LogoContainer className='logo'></LogoContainer>
 					</Link>
 				</div>
@@ -40,6 +42,44 @@ const Header = ({ toggleTheme }) => {
 					<ButtonStyle variant={'smallSecond'} height={'50px'} width={'40px'}>
 						<div onClick={toggleTheme}>Change Theme</div>
 					</ButtonStyle>
+					<ButtonDespegable
+						className='Help'
+						position={'fixed'}
+						height={'50px'}
+						width={'50px'}
+						right={'20px'}
+						bottom={'80px'}
+					>
+						<H1Custom>
+							<MdHelp fontSize={'35px'} />
+						</H1Custom>
+					</ButtonDespegable>
+					<ButtonDespegable
+						className='Bot'
+						position={'fixed'}
+						height={'50px'}
+						width={'50px'}
+						right={'20px'}
+						bottom={'140px'}
+						padding={'0px 0px 0px 6px'}
+					>
+						<H1Custom>
+							<FiRadio fontSize={'35px'} />
+						</H1Custom>
+					</ButtonDespegable>
+					<ButtonDespegable
+						className='Podcast'
+						position={'fixed'}
+						height={'50px'}
+						width={'50px'}
+						right={'20px'}
+						bottom={'20px'}
+						padding={'0px 0px 0px 6px'}
+					>
+						<H1Custom>
+							<BsFillMusicPlayerFill fontSize={'35px'} />
+						</H1Custom>
+					</ButtonDespegable>
 				</div>
 			</HeaderElement>
 		</HeaderContainer>
