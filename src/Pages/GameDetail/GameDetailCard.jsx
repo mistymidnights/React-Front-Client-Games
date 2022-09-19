@@ -34,39 +34,39 @@ const GameDetailCard = ({ game }) => {
 						<h3>{game.desarrolladora}</h3>
 					)}
 					{!game.year ? <h3>Not launched</h3> : <h3>{game.year}</h3>}
-					{!game.pegi ? <h3>Not launched</h3> : <h3>PEGI :{game.pegi}</h3>}
-					{/* <div>
-						{game.plataformas.toLowerCase().includes('ps5') ? (
+					{!game.pegi ? <h3>Not launched</h3> : <h3>PEGI: {game.pegi}</h3>}
+					<div className='consolasicon'>
+						{game.plataformas?.toLowerCase().includes('ps5') ? (
 							<img
 								className='plataformaIcon'
 								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
 							/>
 						) : null}
-						{game.plataformas.toLowerCase().includes('ps4') ? (
+						{game.plataformas?.toLowerCase().includes('ps4') ? (
 							<img
 								className='plataformaIcon'
-								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+								src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663332906/game/rwbwhh7jrwoouvr0byhu.png'
 							/>
 						) : null}
-						{game.plataformas.toLowerCase().includes('xs') ? (
+						{game.plataformas?.toLowerCase().includes('xs') ? (
 							<img
 								className='plataformaIcon'
-								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+								src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663333259/game/kowrefiycdsao3lof0x3.jpg'
 							/>
 						) : null}
-						{game.plataformas.toLowerCase().includes('switch') ? (
+						{game.plataformas?.toLowerCase().includes('switch') ? (
 							<img
 								className='plataformaIcon'
-								src='https://media.discordapp.net/attachments/1014491221349109770/1021247164652982322/nintendo_switch_logo.jpg?width=667&height=666'
+								src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663333012/game/ufqdtu0juz5yextfdzqc.jpg'
 							/>
 						) : null}
-						{game.plataformas.toLowerCase().includes('pc') ? (
+						{game.plataformas?.toLowerCase().includes('pc') ? (
 							<img
 								className='plataformaIcon'
-								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+								src='https://i.redd.it/5be3ypqjts171.jpg'
 							/>
 						) : null}
-					</div> */}
+					</div>
 				</div>
 				<DescriptionDetail>
 					{!game.descripcion ? (

@@ -25,7 +25,7 @@ export const DescriptionDetail = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	margin-top: 60px;
+	margin-top: 28px;
 	width: 100%;
 	height: 272px;
 `;

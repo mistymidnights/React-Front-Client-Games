@@ -15,6 +15,10 @@
 	src: url('/assets/fonts/Rubik-Regular.ttf');
 }
 
+.plataformaIcon {
+	margin: 4px;
+}
+
 /* ------- HEADER ------- */
 
 .Logo {

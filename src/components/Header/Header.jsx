@@ -16,47 +16,46 @@ import RenderPlaylist from '../RenderPlaylist/RenderPlaylist';
 import RenderFavPodcast from '../RenderFavPodcast/RenderFavPodcast';
 
 const Header = ({ toggleTheme }) => {
-	const [chatBot, setChatBot] = useState('none');
-	const [playlist, setPlaylist] = useState('none');
-	const [favPodcast, setFavPodcast] = useState('none');
+	const [chatBot, setChatBot] = useState();
+	const [playlist, setPlaylist] = useState();
+	const [favPodcast, setFavPodcast] = useState();
 
-	function myFunction() {
+	const myFunction = () => {
+		playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
 		const hide = document.querySelector('.playlist');
-		playlist === 'block' ? setPlaylist('none') : <></>;
-		hide.style.display = playlist;
+		if (playlist === 'none') hide.style.display = playlist;
 
+		favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
 		const hideTwo = document.querySelector('.podcast');
-		favPodcast === 'block' ? setFavPodcast('none') : <></>;
-		hideTwo.style.display = favPodcast;
+		if (favPodcast === 'none') hideTwo.style.display = favPodcast;
 
-		chatBot === 'block' ? setChatBot('none') : setChatBot('block');
+		chatBot === 'none' ? setChatBot('block') : setChatBot('none');
 		const cambio = document.querySelector('.renderContainer');
 		cambio.style.display = chatBot;
-	}
+	};
 
-	function myFunctionPlaylist() {
-		console.log('enntro');
+	const myFunctionPlaylist = () => {
+		chatBot === 'block' ? setChatBot('none') : setChatBot('none');
 		const hide = document.querySelector('.renderContainer');
-		chatBot === 'block' ? setChatBot('none') : <></>;
-		hide.style.display = chatBot;
+		if (chatBot === 'none') hide.style.display = chatBot;
 
+		favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
 		const hideTwo = document.querySelector('.podcast');
-		favPodcast === 'block' ? setFavPodcast('none') : <></>;
-		hideTwo.style.display = favPodcast;
+		if (favPodcast === 'none') hideTwo.style.display = favPodcast;
 
-		playlist === 'block' ? setPlaylist('none') : setPlaylist('block');
+		playlist === 'none' ? setPlaylist('block') : setPlaylist('none');
 		const cambio = document.querySelector('.playlist');
 		cambio.style.display = playlist;
-	}
+	};
 
 	const myFunctionFavPodcast = () => {
+		chatBot === 'block' ? setChatBot('none') : setChatBot('none');
 		const hide = document.querySelector('.renderContainer');
-		chatBot === 'block' ? setChatBot('none') : <></>;
-		hide.style.display = chatBot;
+		if (chatBot === 'none') hide.style.display = chatBot;
 
+		playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
 		const hideTwo = document.querySelector('.playlist');
-		playlist === 'block' ? setPlaylist('none') : <></>;
-		hideTwo.style.display = playlist;
+		if (playlist === 'none') hideTwo.style.display = playlist;
 
 		favPodcast === 'none' ? setFavPodcast('block') : setFavPodcast('none');
 		const cambio = document.querySelector('.podcast');
