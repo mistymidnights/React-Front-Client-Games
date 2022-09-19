@@ -43,6 +43,7 @@ export const JwtContextProvider = ({ children }) => {
 		setJwt(null);
 		localStorage.removeItem('user');
 		localStorage.removeItem('token');
+		localStorage.removeItem('userRefresh');
 		localStorage.removeItem('articulo');
 		localStorage.removeItem('game');
 		localStorage.removeItem('plattform');

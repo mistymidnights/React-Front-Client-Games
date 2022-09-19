@@ -100,14 +100,13 @@ const Header = ({ toggleTheme }) => {
 					<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
 						<Link to={'/login'}>Log in</Link>
 					</ButtonStyle>
-					<ButtonStyle
-						onClick={() => logout() & navigate('/')}
-						variant={'small'}
-						height={'30px'}
-						width={'40px'}
-					>
-						<Link to={'/'}>Log Out</Link>
-					</ButtonStyle>
+
+					<div onClick={() => logout() & navigate('/')}>
+						<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
+							logout
+						</ButtonStyle>
+					</div>
+
 					<ButtonStyle variant={'smallSecond'} height={'30px'} width={'50px'}>
 						<Link to={'/register'}>Sign up</Link>
 					</ButtonStyle>

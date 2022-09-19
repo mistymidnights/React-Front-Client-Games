@@ -14,11 +14,12 @@ import {
 } from '../Profile/Profile.element';
 
 const Profile = () => {
-	const { user, setUser, logout } = useContext(JwtContext);
+	const { user, logout } = useContext(JwtContext);
+
 	const resetUser = () => {
 		const savedUser = localStorage.getItem('user');
 		const resetValue = JSON.parse(savedUser);
-		setUser(resetValue);
+		localStorage.setItem('userRefresh', JSON.stringify(resetValue));
 	};
 
 	const { register, handleSubmit } = useForm();
