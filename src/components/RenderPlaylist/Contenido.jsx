@@ -6,7 +6,6 @@ const Contenido = () => {
 				width='100%'
 				height='680'
 				frameBorder='0'
-				allowfullscreen=''
 				allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
 				loading='lazy'
 			></iframe>

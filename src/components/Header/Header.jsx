@@ -94,7 +94,7 @@ const Header = ({ toggleTheme }) => {
 						</H1Custom>
 					</ButtonDespegable>
 					<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
-						Log in
+						<Link to={'/login'}>Log in</Link>
 					</ButtonStyle>
 					<ButtonStyle variant={'smallSecond'} height={'30px'} width={'50px'}>
 						<Link to={'/register'}>Sign up</Link>

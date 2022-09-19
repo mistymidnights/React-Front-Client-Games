@@ -67,48 +67,37 @@ const Contenido = () => {
 						{
 							id: 'seleccion',
 							options: [
-								{ value: 'f', label: 'Front-End', trigger: '7A' },
-								{ value: 'b', label: 'Back-End', trigger: '7B' },
+								{ value: 'f', label: 'Profile', trigger: '7A' },
+								{ value: 'b', label: 'Play mini-game', trigger: '7B' },
+								{ value: 'c', label: 'What to play', trigger: '7C' },
+								{ value: 'e', label: 'Hogwarts Legacy', trigger: '7D' },
 							],
 						},
 						{
 							id: '7A',
 							message:
-								'I see you like Front-End programming! Which of these frameworks would you like to know more about?',
-							trigger: 'seleccionFront',
+								'Check out the top of the age. You will see your avatar image, click on it. Here you have your profile. You can change your image, change your description and change some of your info',
+							trigger: 'preguntaVuelta',
 						},
 						{
 							id: '7B',
 							message:
-								'I see you like Back-End programming! Which of these frameworks would you like to know more about?',
-							trigger: 'seleccionBack',
-						},
-						{
-							id: 'seleccionFront',
-							options: [
-								{
-									value: 'Angular_(framework)',
-									label: 'Angular',
-									trigger: '9',
-								},
-								{ value: 'React', label: 'React', trigger: '9' },
-								{ value: 'Vue.js', label: 'Vue.js', trigger: '9' },
-							],
-						},
-						{
-							id: 'seleccionBack',
-							options: [
-								{ value: 'Spring_Framework', label: 'Spring', trigger: '9' },
-								{ value: 'Laravel', label: 'Laravel', trigger: '9' },
-								{ value: '.NET_Core', label: '.Net Core', trigger: '9' },
-							],
-						},
-						{
-							id: '9',
-							component: <WikipediaSearch />,
-							asMessage: true,
+								'If you want to try some mini-games need to go to our top page in Menu. Click on the button with the play icon and this will redirect to our games. Enjoy!',
 							trigger: 'preguntaVuelta',
 						},
+						{
+							id: '7C',
+							message:
+								'This month just release a new game called -A Plague Tale: Requiem- ',
+							trigger: 'preguntaVuelta',
+						},
+						{
+							id: '7D',
+							message:
+								' Hogwarts Legacy will launch on February 10, 2023 for PlayStation, Xbox and PC. The Nintendo Switch launch date will be revealed soon.',
+							trigger: 'preguntaVuelta',
+						},
+
 						{
 							id: 'preguntaVuelta',
 							message: 'Do you need to know anything else?',

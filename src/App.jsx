@@ -14,6 +14,9 @@ import Articulo from './Pages/Articulo/Articulo';
 import Plataforma from './Pages/Plataforma/Plataforma';
 import Register from './Pages/Register/Register';
 import GameDetail from './Pages/GameDetail/GameDetail';
+import Login from './Pages/Login/Login';
+import { JwtContextProvider } from './context/jwtContext';
+import Profile from './Pages/Profile/Profile';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -23,22 +26,26 @@ function App() {
 	};
 
 	return (
-		<ThemeProvider theme={createTheme(themePovide)}>
-			<GlobalStyles />
-			<Router>
-				<Header toggleTheme={toggleTheme} />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/game' element={<Game />} />
-					<Route path='/game/:id' element={<GameDetail />} />
-					<Route path='/freetoplay' element={<GameFree />} />
-					<Route path='/posts' element={<Articulo />} />
-					<Route path='/platforms' element={<Plataforma />} />
-					<Route path='/register' element={<Register />} />
-				</Routes>
-				<Footer height={'30px'} width={'30px'} />
-			</Router>
-		</ThemeProvider>
+		<JwtContextProvider>
+			<ThemeProvider theme={createTheme(themePovide)}>
+				<GlobalStyles />
+				<Router>
+					<Header toggleTheme={toggleTheme} />
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/game' element={<Game />} />
+						<Route path='/game/:id' element={<GameDetail />} />
+						<Route path='/freetoplay' element={<GameFree />} />
+						<Route path='/posts' element={<Articulo />} />
+						<Route path='/platforms' element={<Plataforma />} />
+						<Route path='/register' element={<Register />} />
+						<Route path='/login' element={<Login />} />
+						<Route path='/profile' element={<Profile />} />
+					</Routes>
+					<Footer height={'30px'} width={'30px'} />
+				</Router>
+			</ThemeProvider>
+		</JwtContextProvider>
 	);
 }
 

@@ -18,6 +18,7 @@ const Register = () => {
 		formData.append('name', data.name);
 		formData.append('nick', data.nick);
 		formData.append('email', data.email);
+		formData.append('location', data.location);
 		formData.append('password', data.password);
 		formData.append('image', data.image);
 
@@ -60,6 +61,15 @@ const Register = () => {
 							name='email'
 							{...register('email')}
 							placeholder='example@mail.com'
+						/>
+
+						<label htmlFor='location'>E-mail</label>
+						<input
+							type='text'
+							id='location'
+							name='location'
+							{...register('location')}
+							placeholder='Madrid, Spain'
 						/>
 
 						<label htmlFor='password'>Password</label>
