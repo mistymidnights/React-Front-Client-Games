@@ -13,6 +13,7 @@ import GameFree from './Pages/Game/GameFree';
 import Articulo from './Pages/Articulo/Articulo';
 import Plataforma from './Pages/Plataforma/Plataforma';
 import Register from './Pages/Register/Register';
+import GameDetail from './Pages/GameDetail/GameDetail';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -29,7 +30,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/game' element={<Game />} />
-					{/* <Route path='/game/:id' element={<GameDetail />} /> */}
+					<Route path='/game/:id' element={<GameDetail />} />
 					<Route path='/freetoplay' element={<GameFree />} />
 					<Route path='/posts' element={<Articulo />} />
 					<Route path='/platforms' element={<Plataforma />} />

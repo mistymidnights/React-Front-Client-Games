@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { API } from '../../services/API';
@@ -17,6 +16,7 @@ const Register = () => {
 	const formSubmit = (data) => {
 		const formData = new FormData();
 		formData.append('name', data.name);
+		formData.append('nick', data.nick);
 		formData.append('email', data.email);
 		formData.append('password', data.password);
 		formData.append('image', data.image);
@@ -43,6 +43,14 @@ const Register = () => {
 							name='name'
 							{...register('name')}
 							placeholder='Name'
+						/>
+						<label htmlFor='nick'>Nick</label>
+						<input
+							type='text'
+							id='nick'
+							name='nick'
+							{...register('nick')}
+							placeholder='Nick'
 						/>
 
 						<label htmlFor='email'>E-mail</label>

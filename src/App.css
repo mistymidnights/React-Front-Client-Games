@@ -10,6 +10,10 @@
 	font-family: 'Kiona';
 	src: url('/assets/fonts/Kiona-Regular.ttf');
 }
+@font-face {
+	font-family: 'RubikLight';
+	src: url('/assets/fonts/Rubik-Regular.ttf');
+}
 
 /* ------- HEADER ------- */
 
@@ -26,7 +30,7 @@
 }
 
 .BtnHeader {
-	width: 665px;
+	width: 692px;
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -355,4 +359,24 @@ input[type='file'] {
 	background-color: rgb(221, 221, 221);
 	font-size: 20px;
 	padding: 8px 0px;
+}
+
+.infoTopDetail {
+	color: rgb(134, 90, 166);
+}
+
+.plataformaIcon {
+	height: 50px;
+}
+
+/* ---------------- FONT ------------ */
+.descripcionText {
+	font-family: 'RubikLight';
+	font-size: 20px;
+	overflow-y: scroll;
+}
+
+.titleDetail {
+	font-family: 'RubikLight';
+	text-transform: uppercase;
 }

@@ -18,7 +18,9 @@
 		"react-dom": "^18.2.0",
 		"react-hook-form": "^7.35.0",
 		"react-icons": "^4.4.0",
-		"react-router-dom": "^6.4.0"
+		"react-router-dom": "^6.4.0",
+		"react-simple-chatbot": "^0.6.1",
+		"sweetalert2": "^11.4.33"
 	},
 	"devDependencies": {
 		"@emotion/babel-plugin": "^11.10.2",

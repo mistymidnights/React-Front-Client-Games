@@ -1,5 +1,6 @@
 import { HeroOneContainer, HeroOnee } from './HeroOne.element';
 import ButtonStyle from '../UI/ButtonStyle/Button';
+import { Link } from 'react-router-dom';
 
 const HeroOne = () => {
 	return (
@@ -11,10 +12,12 @@ const HeroOne = () => {
 							Join in and discover a new hole commuinty of videogames
 						</h2>
 					</div>
-					<ButtonStyle variant={'extralargeSecond'} height={'50px'}>
-						{' '}
-						JOIN
-					</ButtonStyle>
+					<Link to={'/register'}>
+						<ButtonStyle variant={'extralargeSecond'} height={'50px'}>
+							{' '}
+							JOIN
+						</ButtonStyle>
+					</Link>
 				</div>
 
 				<div className='HeroImage'>

@@ -1,11 +1,15 @@
-import { Link } from 'react-router-dom';
-import ButtonStyle from '../../components/UI/ButtonStyle/Button';
 import '../../Games.css';
-import { GamesContainerCard } from '../Game/Game.element';
+import {
+	DescriptionDetail,
+	GameDetailCardElement,
+	RightContent,
+} from './GameDetail.element';
 
 const GameDetailCard = ({ game }) => {
+	console.log('entro');
+	console.log(game);
 	return (
-		<GamesContainerCard className='game_card'>
+		<GameDetailCardElement>
 			<div className='profile_img_container'>
 				{game.image !== 'undefined' ? (
 					<img className='imageCardGame' src={game.image} alt={game.name} />
@@ -16,19 +20,64 @@ const GameDetailCard = ({ game }) => {
 					/>
 				)}
 			</div>
-			<div className='content_container'>
-				{!game.name ? <h2>No name</h2> : <h2>{game.name}</h2>}
-				{!game.type ? (
-					<h3>No type</h3>
+			<RightContent>
+				{!game.name ? (
+					<h1 className='titleDetail'>No name</h1>
 				) : (
-					<h3 className='typeGameText'>{game.type}</h3>
+					<h1 className='titleDetail'>{game.name}</h1>
 				)}
-				{!game.year ? <h3>Not launched</h3> : <h3>{game.year}</h3>}
-				<ButtonStyle variant={'small'}>
-					<Link to={`/juego/free/${game._id}`}>More...</Link>
-				</ButtonStyle>
-			</div>
-		</GamesContainerCard>
+				<div className='infoTopDetail'>
+					{!game.type ? <h3>No type</h3> : <h3>{game.type}</h3>}
+					{!game.desarrolladora ? (
+						<h3>No dev</h3>
+					) : (
+						<h3>{game.desarrolladora}</h3>
+					)}
+					{!game.year ? <h3>Not launched</h3> : <h3>{game.year}</h3>}
+					{!game.pegi ? <h3>Not launched</h3> : <h3>PEGI :{game.pegi}</h3>}
+					{/* <div>
+						{game.plataformas.toLowerCase().includes('ps5') ? (
+							<img
+								className='plataformaIcon'
+								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+							/>
+						) : null}
+						{game.plataformas.toLowerCase().includes('ps4') ? (
+							<img
+								className='plataformaIcon'
+								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+							/>
+						) : null}
+						{game.plataformas.toLowerCase().includes('xs') ? (
+							<img
+								className='plataformaIcon'
+								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+							/>
+						) : null}
+						{game.plataformas.toLowerCase().includes('switch') ? (
+							<img
+								className='plataformaIcon'
+								src='https://media.discordapp.net/attachments/1014491221349109770/1021247164652982322/nintendo_switch_logo.jpg?width=667&height=666'
+							/>
+						) : null}
+						{game.plataformas.toLowerCase().includes('pc') ? (
+							<img
+								className='plataformaIcon'
+								src='https://media.discordapp.net/attachments/1014491221349109770/1021247206629580900/ps5.jpg?width=666&height=666'
+							/>
+						) : null}
+					</div> */}
+				</div>
+				<DescriptionDetail>
+					{!game.descripcion ? (
+						<p className='descripcionText'>Not launched</p>
+					) : (
+						<p className='descripcionText'>{game.descripcion}</p>
+					)}
+				</DescriptionDetail>
+				{/* //TODO VIDEO */}
+			</RightContent>
+		</GameDetailCardElement>
 	);
 };
 

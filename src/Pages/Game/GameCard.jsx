@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
 import ButtonStyle from '../../components/UI/ButtonStyle/Button';
 import '../../Games.css';
 import { GamesContainerCard } from './Game.element';
+import { Link } from 'react-router-dom';
 
 const GameCard = ({ game }) => {
 	return (
@@ -24,9 +24,11 @@ const GameCard = ({ game }) => {
 					<h3 className='typeGameText'>{game.type}</h3>
 				)}
 				{!game.year ? <h3>Not launched</h3> : <h3>{game.year}</h3>}
-				<ButtonStyle variant={'small'}>
-					<Link to={`/juego/${game._id}`}>More...</Link>
-				</ButtonStyle>
+				<div>
+					<ButtonStyle variant={'small'}>
+						<Link to={`/game/${game._id}`}>More...</Link>
+					</ButtonStyle>
+				</div>
 			</div>
 		</GamesContainerCard>
 	);

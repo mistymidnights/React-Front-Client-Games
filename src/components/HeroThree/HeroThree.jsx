@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import { HeroThreeContainer, HeroThree } from './HeroThree.element';
 
@@ -8,9 +8,11 @@ const HeroThre = () => {
 			<HeroThree>
 				<div className='titleWBtn'>
 					<h2 className='TitleHero'>Video</h2>
-					<ButtonStyle variant={'small'} height={'30px'}>
-						More
-					</ButtonStyle>
+					<Link to={'/video'}>
+						<ButtonStyle variant={'small'} height={'30px'}>
+							More
+						</ButtonStyle>
+					</Link>
 				</div>
 				<div className='CardPostHero2'>
 					<div className='leftPosts'>
@@ -22,7 +24,6 @@ const HeroThre = () => {
 							title='YouTube video player'
 							frameBorder='0'
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-							allowFullScreen
 						></iframe>
 					</div>
 					<div className='rightPosts'>
@@ -35,7 +36,6 @@ const HeroThre = () => {
 								title='YouTube video player'
 								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-								allowFullScreen
 							></iframe>
 							<iframe
 								className='youtubeMini'
@@ -45,7 +45,6 @@ const HeroThre = () => {
 								title='YouTube video player'
 								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-								allowFullScreen
 							></iframe>
 						</div>
 					</div>

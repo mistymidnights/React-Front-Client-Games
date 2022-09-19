@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import Imagen from '../UI/Imagen/Imagen';
 import P1Custom from '../UI/PCustom/PCustom';
@@ -60,9 +61,11 @@ const HeroTwo = () => {
 				</div>
 				<div className='titleWBtn'>
 					<h2 className='TitleHero'>Posts</h2>
-					<ButtonStyle variant={'small'} height={'30px'}>
-						More
-					</ButtonStyle>
+					<Link to={'/posts'}>
+						<ButtonStyle variant={'small'} height={'30px'}>
+							More
+						</ButtonStyle>
+					</Link>
 				</div>
 				<div className='CardPostHero'>
 					<div className='leftPosts'>
