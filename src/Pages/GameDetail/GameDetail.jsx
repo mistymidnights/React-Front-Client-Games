@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { API } from '../../services/API';
 import '../../Games.css';
 import GameDetailCard from './GameDetailCard';
-import { HeroGames } from '../Game/Game.element';
 import { useParams } from 'react-router-dom';
 import { HeroDetail } from './GameDetail.element';
 

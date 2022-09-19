@@ -4,8 +4,10 @@ export const HeroDetail = styled.div`
 	width: 100%;
 	min-height: 1000px;
 	display: flex;
+	flex-direction: column;
 	padding: 60px;
 	justify-content: center;
+	align-items: center;
 `;
 
 export const GameDetailCardElement = styled.div`
@@ -13,6 +15,7 @@ export const GameDetailCardElement = styled.div`
 	height: 200px;
 	display: flex;
 	gap: 20px;
+	min-height: 600px;
 `;
 
 export const RightContent = styled.div`
@@ -27,5 +30,5 @@ export const DescriptionDetail = styled.div`
 	flex-direction: column;
 	margin-top: 28px;
 	width: 100%;
-	height: 272px;
+	height: 240px;
 `;
