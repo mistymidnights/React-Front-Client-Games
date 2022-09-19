@@ -7,18 +7,22 @@ import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
 import { BsFillMusicPlayerFill, BsPlayFill } from 'react-icons/bs';
 import H1Custom from '../UI/H1Custom/H1Custom';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MdHelp } from 'react-icons/md';
 import { FiRadio } from 'react-icons/fi';
 import RenderBot from '../RenderBot/RenderBot';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import RenderPlaylist from '../RenderPlaylist/RenderPlaylist';
 import RenderFavPodcast from '../RenderFavPodcast/RenderFavPodcast';
+import { JwtContext } from '../../context/jwtContext';
 
 const Header = ({ toggleTheme }) => {
 	const [chatBot, setChatBot] = useState();
 	const [playlist, setPlaylist] = useState();
 	const [favPodcast, setFavPodcast] = useState();
+
+	const { logout } = useContext(JwtContext);
+	const navigate = useNavigate();
 
 	const myFunction = () => {
 		playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
@@ -95,6 +99,14 @@ const Header = ({ toggleTheme }) => {
 					</ButtonDespegable>
 					<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
 						<Link to={'/login'}>Log in</Link>
+					</ButtonStyle>
+					<ButtonStyle
+						onClick={() => logout() & navigate('/')}
+						variant={'small'}
+						height={'30px'}
+						width={'40px'}
+					>
+						<Link to={'/'}>Log Out</Link>
 					</ButtonStyle>
 					<ButtonStyle variant={'smallSecond'} height={'30px'} width={'50px'}>
 						<Link to={'/register'}>Sign up</Link>

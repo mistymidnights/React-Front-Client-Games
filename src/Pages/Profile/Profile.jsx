@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { JwtContext } from '../../context/jwtContext';
@@ -27,6 +26,7 @@ const Profile = () => {
 
 	const defaultValues = {
 		nick: user.nick,
+		location: user.location,
 		image: user.image,
 	};
 
