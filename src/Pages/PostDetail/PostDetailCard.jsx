@@ -12,7 +12,7 @@ const PostDetailCard = ({ post }) => {
 	return (
 		<>
 			<PostDetailCardElement>
-				<div className='.profile_img_container-detail'>
+				<div className='profile_img_container-detail'>
 					{post.image !== 'undefined' ? (
 						<img
 							className='imageCardGamePost'

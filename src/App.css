@@ -311,6 +311,24 @@
 	.BtnHeader {
 		width: 280px;
 	}
+	.imageCardGamePost {
+		height: 100%;
+	}
+	.profile_img_container-detail {
+		height: 200px;
+	}
+	.titleDetail {
+		font-size: 16px;
+	}
+	.css-1qairvw-RightContent > h1 {
+		font-size: 24px;
+	}
+	.css-j5k945-DescriptionDetail > p {
+		font-size: 16px;
+	}
+	.infoTopDetail > h3 {
+		font-size: 20px;
+	}
 }
 
 /* ---------------- REGISTER ------------ */
@@ -462,6 +480,108 @@ input[type='file'] {
 iframe {
 	border: none;
 }
+
+/* -------------- COMENTARIO ----------- */
+.comentarioMSGContainer {
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.comentarioImgUser {
+	height: 30px;
+}
+
+.comentarioImgUser > img {
+	height: 100%;
+	clip-path: circle();
+}
+
+.displayNameComentario {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.userComentario > p {
+	font-family: 'Rubik';
+	font-weight: bold;
+	color: rgb(127, 23, 145);
+}
+.dateComentario > p {
+	font-size: 10px;
+	font-family: 'RubikLight';
+}
+.contenidoComentario {
+	font-weight: bold;
+}
+.inputComentario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.container_contenido {
+	background-color: aliceblue;
+	color: black;
+	border-radius: 10px;
+	font-family: 'RubikLight';
+	padding: 10px;
+}
+
+.submitComentario {
+	color: rgb(255, 255, 255);
+	background-color: crimson;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.submitComentario:hover {
+	background-color: rgb(120, 33, 149);
+}
+.contenedorInputComentario {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.gallery-comentarios {
+	overflow-y: scroll;
+	padding: 20px 10px 144px 0px;
+	width: 631px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedorAllComentarios {
+	width: 100%;
+	display: flex;
+}
+
+.comentarioMSGContainer {
+	width: 442px;
+}
+
+.gallery_comentarios {
+	height: 178px;
+	width: 950px;
+	overflow-x: hidden;
+}
+
+.contenidoComentario > p {
+	font-family: 'RubikLight';
+	font-weight: lighter;
+}
+
 /* ---------------- FONT ------------ */
 .descripcionText {
 	font-family: 'RubikLight';

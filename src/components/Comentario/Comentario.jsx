@@ -47,24 +47,30 @@ const Comentario = () => {
 
 	return (
 		<>
-			<div className='gallery_mascotas'>
-				{allComentarios.map((comentario) => (
-					<RenderComentarios comentario={comentario} key={comentario._id} />
-				))}
+			<div className='contenedorAllComentarios'>
+				<div className='gallery_comentarios'>
+					{allComentarios.map((comentario) => (
+						<RenderComentarios comentario={comentario} key={comentario._id} />
+					))}
+				</div>
+				<div className='contenedorInputComentario'>
+					<form className='inputComentario' onSubmit={handleSubmit(formSubmit)}>
+						<label htmlFor='contenido'>Put your comment here</label>
+						<textarea
+							className='container_contenido'
+							type='text'
+							id='contenido'
+							name='contenido'
+							cols='30'
+							rows='6'
+							{...register('contenido')}
+						/>
+						<button className='submitComentario' type='submit'>
+							Submit
+						</button>
+					</form>
+				</div>
 			</div>
-			<form onSubmit={handleSubmit(formSubmit)}>
-				<label htmlFor='contenido'>Escribe aqui tu comentario</label>
-				<textarea
-					className='container_contenido'
-					type='text'
-					id='contenido'
-					name='contenido'
-					cols='30'
-					rows='6'
-					{...register('contenido')}
-				/>
-				<button type='submit'>Submit</button>
-			</form>
 		</>
 	);
 };

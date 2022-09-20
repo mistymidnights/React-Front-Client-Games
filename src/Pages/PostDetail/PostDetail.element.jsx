@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const HeroPostDetailCard = styled.div`
 	width: 100%;
-	min-height: 1217px;
+	min-height: 1500px;
 	display: flex;
 	flex-direction: column;
 	padding: 60px;
@@ -34,4 +34,5 @@ export const DescriptionDetail = styled.div`
 	margin-top: 28px;
 	width: 100%;
 	height: 240px;
+	margin-bottom: 35px;
 `;
