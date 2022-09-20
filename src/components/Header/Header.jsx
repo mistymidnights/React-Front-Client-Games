@@ -21,7 +21,7 @@ const Header = ({ toggleTheme }) => {
 	const [playlist, setPlaylist] = useState();
 	const [favPodcast, setFavPodcast] = useState();
 
-	const { logout } = useContext(JwtContext);
+	const { user, logout } = useContext(JwtContext);
 	const navigate = useNavigate();
 
 	const myFunction = () => {
@@ -92,27 +92,50 @@ const Header = ({ toggleTheme }) => {
 							<li>Chat</li>
 						</a>
 					</ul>
-					<ButtonDespegable height={'30px'} width={'40px'}>
+					{user ? (
+						<div className='profile-header-container'>
+							<div className='listStyleHeader'>
+								<div className='li_avatar'>
+									<div className='avatar_container'>
+										<Link to={'/profile'}>
+											{user.image !== 'undefined' ? (
+												<img src={user?.image} alt='user Avatar' />
+											) : null}
+										</Link>
+									</div>
+								</div>
+							</div>
+							<div onClick={() => logout() & navigate('/')}>
+								<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
+									logout
+								</ButtonStyle>
+							</div>
+						</div>
+					) : (
+						<>
+							<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
+								<Link to={'/login'}>Log in</Link>
+							</ButtonStyle>
+							<ButtonStyle
+								variant={'smallSecond'}
+								height={'30px'}
+								width={'50px'}
+							>
+								<Link to={'/register'}>Sign up</Link>
+							</ButtonStyle>
+						</>
+					)}
+
+					<ButtonStyle variant={'smallSecond'} height={'50px'} width={'40px'}>
+						<div onClick={toggleTheme}>Change Theme</div>
+					</ButtonStyle>
+
+					<ButtonDespegable height={'30px'} width={'30px'}>
 						<H1Custom>
 							<BsPlayFill />
 						</H1Custom>
 					</ButtonDespegable>
-					<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
-						<Link to={'/login'}>Log in</Link>
-					</ButtonStyle>
 
-					<div onClick={() => logout() & navigate('/')}>
-						<ButtonStyle variant={'small'} height={'30px'} width={'40px'}>
-							logout
-						</ButtonStyle>
-					</div>
-
-					<ButtonStyle variant={'smallSecond'} height={'30px'} width={'50px'}>
-						<Link to={'/register'}>Sign up</Link>
-					</ButtonStyle>
-					<ButtonStyle variant={'smallSecond'} height={'50px'} width={'40px'}>
-						<div onClick={toggleTheme}>Change Theme</div>
-					</ButtonStyle>
 					<RenderBot />
 					<div onClick={myFunction}>
 						<ButtonDespegable

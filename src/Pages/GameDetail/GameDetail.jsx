@@ -23,7 +23,6 @@ const GameDetail = () => {
 
 	return (
 		<>
-			{console.log(gameDetail)}
 			<HeroDetail>
 				{gameDetail ? (
 					<GameDetailCard game={gameDetail} />

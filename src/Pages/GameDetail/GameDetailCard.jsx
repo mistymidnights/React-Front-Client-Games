@@ -6,7 +6,6 @@ import {
 } from './GameDetail.element';
 
 const GameDetailCard = ({ game }) => {
-	console.log('entro');
 	console.log(game);
 	return (
 		<>
@@ -82,7 +81,6 @@ const GameDetailCard = ({ game }) => {
 			<iframe
 				width='760'
 				height='515'
-				frameborder='0'
 				src={game.video}
 				title='YouTube video player'
 				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

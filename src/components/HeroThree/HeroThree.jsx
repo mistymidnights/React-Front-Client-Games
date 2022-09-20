@@ -22,7 +22,6 @@ const HeroThre = () => {
 							height='370'
 							src='https://www.youtube.com/embed/QjeYtrpTv-o'
 							title='YouTube video player'
-							frameBorder='0'
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						></iframe>
 					</div>
@@ -34,7 +33,6 @@ const HeroThre = () => {
 								height='175'
 								src='https://www.youtube.com/embed/vrZjI2nKrn4'
 								title='YouTube video player'
-								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 							></iframe>
 							<iframe
@@ -43,7 +41,6 @@ const HeroThre = () => {
 								height='175'
 								src='https://www.youtube.com/embed/F3jePdO9_jc'
 								title='YouTube video player'
-								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 							></iframe>
 						</div>

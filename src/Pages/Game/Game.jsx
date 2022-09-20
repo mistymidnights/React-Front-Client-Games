@@ -10,7 +10,7 @@ const Game = () => {
 	const [allGames, setAllGames] = useState([]);
 
 	const getAllGames = async () => {
-		API.get('/juego/').then(res => {
+		API.get('/juego/').then((res) => {
 			setAllGames(res.data.data.juego);
 			console.log(res.data.data.juego);
 		});
@@ -38,7 +38,7 @@ const Game = () => {
 				</div>
 				<div className='games_container'>
 					{allGames.length ? (
-						allGames.map(game => <GameCard game={game} key={game._id} />)
+						allGames.map((game) => <GameCard game={game} key={game._id} />)
 					) : (
 						<p>Loading Games...</p>
 					)}

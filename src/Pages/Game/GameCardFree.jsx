@@ -37,7 +37,7 @@ const GameCardFree = ({ game }) => {
 					<h3>{game.release_date}</h3>
 				)}
 				<ButtonStyle variant={'small'}>
-					<Link to={`/juego/${game._id}`}>More...</Link>
+					<Link to={`/freetoplay/${game._id}`}>More...</Link>
 				</ButtonStyle>
 			</div>
 		</GamesContainerCardFree>

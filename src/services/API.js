@@ -16,9 +16,3 @@ export const API = axios.create({
 	timeout: 10000,
 	headers: APIHeaders,
 });
-
-export const APIFreeToPlay = axios.create({
-	baseURL: 'https://www.freetogame.com/api',
-	timeout: 10000,
-	headers: APIHeaders,
-});

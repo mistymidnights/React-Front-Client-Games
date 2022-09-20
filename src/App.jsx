@@ -17,6 +17,8 @@ import GameDetail from './Pages/GameDetail/GameDetail';
 import Login from './Pages/Login/Login';
 import { JwtContextProvider } from './context/jwtContext';
 import Profile from './Pages/Profile/Profile';
+import FreeDetail from './Pages/FreeDetail/FreeDetail';
+import PostDetail from './Pages/PostDetail/PostDetail';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -36,7 +38,9 @@ function App() {
 						<Route path='/game' element={<Game />} />
 						<Route path='/game/:id' element={<GameDetail />} />
 						<Route path='/freetoplay' element={<GameFree />} />
+						<Route path='/freetoplay/:id' element={<FreeDetail />} />
 						<Route path='/posts' element={<Articulo />} />
+						<Route path='/posts/:id' element={<PostDetail />} />
 						<Route path='/platforms' element={<Plataforma />} />
 						<Route path='/register' element={<Register />} />
 						<Route path='/login' element={<Login />} />

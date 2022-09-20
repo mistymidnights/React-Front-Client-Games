@@ -32,7 +32,7 @@ const ArticuloCard = ({ articulo }) => {
 				)}
 				{!articulo.resumen ? <h3>Not resumen</h3> : <h3>{articulo.resumen}</h3>}
 				<ButtonStyle variant={'small'}>
-					<Link to={`/juego/${articulo._id}`}>Read</Link>
+					<Link to={`/posts/${articulo._id}`}>Read</Link>
 				</ButtonStyle>
 			</div>
 		</div>
