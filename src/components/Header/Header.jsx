@@ -85,9 +85,7 @@ const Header = ({ toggleTheme }) => {
 						<Link to={'/posts'}>
 							<li>Posts</li>
 						</Link>
-						<Link to={'/podcast'}>
-							<li>Podcast</li>
-						</Link>
+
 						<a href='https://game-a5d6a.firebaseapp.com/' target='blank'>
 							<li>Chat</li>
 						</a>

@@ -7,7 +7,7 @@ export const HeroGames = styled.div`
 	flex-direction: column;
 	align-content: center;
 	justify-content: flex-start;
-	padding-top: 40px;
+	padding-top: 120px;
 `;
 
 export const GamesContainerCard = styled.div`

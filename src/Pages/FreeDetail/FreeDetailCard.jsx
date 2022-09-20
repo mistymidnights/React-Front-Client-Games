@@ -1,8 +1,8 @@
 import '../../Games.css';
 import {
-	DescriptionDetail,
+	DescriptionDetailFree,
 	FreeDetailCardElement,
-	RightContent,
+	RightContentFree,
 } from './FreeDetail.element';
 
 const FreeDetailCard = ({ free }) => {
@@ -25,7 +25,7 @@ const FreeDetailCard = ({ free }) => {
 						/>
 					)}
 				</div>
-				<RightContent>
+				<RightContentFree>
 					{!free.title ? (
 						<h1 className='titleDetail'>No name</h1>
 					) : (
@@ -50,14 +50,14 @@ const FreeDetailCard = ({ free }) => {
 							</a>
 						)}
 					</div>
-					<DescriptionDetail>
+					<DescriptionDetailFree>
 						{!free.short_description ? (
 							<p className='descripcionText'>Not launched</p>
 						) : (
 							<p className='descripcionText'>{free.short_description}</p>
 						)}
-					</DescriptionDetail>
-				</RightContent>
+					</DescriptionDetailFree>
+				</RightContentFree>
 			</FreeDetailCardElement>
 		</>
 	);

@@ -63,7 +63,7 @@ const Register = () => {
 							placeholder='example@mail.com'
 						/>
 
-						<label htmlFor='location'>E-mail</label>
+						<label htmlFor='location'>Location</label>
 						<input
 							type='text'
 							id='location'

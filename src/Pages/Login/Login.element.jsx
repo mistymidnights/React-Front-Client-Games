@@ -7,7 +7,7 @@ export const LoginSection = styled.div`
 	height: 100vh;
 	background-color: var(--secondary-back);
 	color: var(--text-color);
-	padding-top: 100px;
+	padding-top: 190px;
 `;
 
 export const FormContainer = styled.div`

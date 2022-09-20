@@ -19,6 +19,7 @@ import { JwtContextProvider } from './context/jwtContext';
 import Profile from './Pages/Profile/Profile';
 import FreeDetail from './Pages/FreeDetail/FreeDetail';
 import PostDetail from './Pages/PostDetail/PostDetail';
+import VideoGallery from './Pages/VideoGallery/VideoGallery';
 
 function App() {
 	const [themePovide, setThemeProvide] = useState(themeDark);
@@ -36,6 +37,7 @@ function App() {
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/game' element={<Game />} />
+						<Route path='/video' element={<VideoGallery />} />
 						<Route path='/game/:id' element={<GameDetail />} />
 						<Route path='/freetoplay' element={<GameFree />} />
 						<Route path='/freetoplay/:id' element={<FreeDetail />} />

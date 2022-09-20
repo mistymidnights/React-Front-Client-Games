@@ -8,6 +8,7 @@ export const HeroPostDetailCard = styled.div`
 	padding: 60px;
 	justify-content: flex-start;
 	align-items: center;
+	padding-top: 168px;
 `;
 
 export const PostDetailCardElement = styled.div`

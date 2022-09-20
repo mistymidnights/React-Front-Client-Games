@@ -6,8 +6,9 @@ export const HeroFreeDetail = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 60px;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	padding-top: 100px;
 `;
 
 export const FreeDetailCardElement = styled.div`
@@ -17,20 +18,22 @@ export const FreeDetailCardElement = styled.div`
 	gap: 20px;
 	min-height: 600px;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	padding-top: 100px;
 `;
 
-export const RightContent = styled.div`
+export const RightContentFree = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	align-items: center;
 `;
 
-export const DescriptionDetail = styled.div`
+export const DescriptionDetailFree = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	margin-top: 28px;
-	width: 100%;
+	width: 50%;
 	height: 240px;
 `;

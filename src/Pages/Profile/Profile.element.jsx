@@ -2,12 +2,12 @@ import styled from '@emotion/styled';
 
 export const HeroProfile = styled.div`
 	height: 100vh;
-	min-height: 1000px;
+	min-height: 1043px;
 	color: black;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-top: 50px;
+	padding-top: 150px;
 `;
 
 export const HeroProfileContainer = styled.div`

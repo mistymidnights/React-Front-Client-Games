@@ -3,9 +3,18 @@ import styled from '@emotion/styled';
 export const HeaderContainer = styled.div`
 	width: 100%;
 	height: 140px;
-	padding-top: 20px;
+	padding-top: 37px;
+	padding-bottom: 60px;
 	display: flex;
 	justify-content: center;
+	background: rgb(255, 255, 255);
+	position: fixed;
+	z-index: 30;
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0) 12%,
+		rgba(0, 0, 0, 1) 56%
+	);
 `;
 
 export const HeaderElement = styled.div`

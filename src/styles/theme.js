@@ -92,7 +92,7 @@ export const themeLight = {
 		back: 'https://cdn.discordapp.com/attachments/1014491221349109770/1020805053319217203/customwallpaperLARGEWHITE.jpg',
 	},
 	logo: {
-		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019990186010099742/Akira-PNG.png',
+		main: 'https://cdn.discordapp.com/attachments/1014491221349109770/1019948376944558150/Akira-PNG-Isolated-File.png',
 	},
 	spacing,
 };
