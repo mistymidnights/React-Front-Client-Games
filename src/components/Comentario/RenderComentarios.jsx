@@ -4,6 +4,9 @@ const RenderComentarios = ({ comentario }) => {
 	return (
 		<div>
 			<div>
+				{comentario.image ? <img src={comentario?.image} alt='' /> : null}
+			</div>
+			<div>
 				<p>{comentario.contenido}</p>
 			</div>
 			<div>

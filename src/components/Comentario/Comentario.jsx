@@ -33,6 +33,7 @@ const Comentario = () => {
 		formData.append('contenido', data.contenido);
 		formData.append('articulo', articuloDetail._id);
 		formData.append('nombre', user.nick);
+		formData.append('image', user.image);
 
 		API.post('/comentario/create', formData).then((res) => {
 			console.log(res);

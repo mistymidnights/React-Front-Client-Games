@@ -12,7 +12,7 @@ export const APIHeaders = {
 };
 // https://back-game.herokuapp.com/api/v1
 export const API = axios.create({
-	baseURL: 'http://localhost:8080/api/v1',
+	baseURL: 'https://back-game.herokuapp.com/api/v1',
 	timeout: 10000,
 	headers: APIHeaders,
 });
