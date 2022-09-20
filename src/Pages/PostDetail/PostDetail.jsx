@@ -15,6 +15,8 @@ const PostDetail = () => {
 		API.get(`/articulo/${id}`).then((res) => {
 			setPostDetail(res.data.data.articulo);
 			console.log(res.data.data.articulo);
+			localStorage.removeItem('articulo');
+			localStorage.setItem('articulo', JSON.stringify(res.data.data.articulo));
 		});
 	};
 

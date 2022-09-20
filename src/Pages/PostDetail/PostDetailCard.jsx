@@ -1,5 +1,9 @@
 import Comentario from '../../components/Comentario/Comentario';
 import '../../Games.css';
+import { API } from '../../services/API';
+import { useContext, useState, useEffect } from 'react';
+import { JwtContext } from '../../context/jwtContext';
+import { useParams } from 'react-router-dom';
 import {
 	DescriptionDetail,
 	PostDetailCardElement,
@@ -7,11 +11,41 @@ import {
 } from './PostDetail.element';
 
 const PostDetailCard = ({ post }) => {
-	console.log(post);
+	const [likeslenght, setLikeslenght] = useState([]);
+	const { setArticulo, user } = useContext(JwtContext);
+	const { id } = useParams();
+
+	const getFreeDetail = async () => {
+		API.get(`/articulo/${id}`).then((res) => {
+			setArticulo(post);
+			localStorage.removeItem('articulo');
+			localStorage.setItem('articulo', JSON.stringify(res.data.data.articulo));
+			const savedArticulo = localStorage.getItem('articulo');
+			const ValueEdit = JSON.parse(savedArticulo);
+			setArticulo(ValueEdit);
+
+			setLikeslenght(ValueEdit.likes);
+			console.log(likeslenght);
+		});
+	};
+
+	useEffect(() => {
+		getFreeDetail();
+	}, []);
+
+	const likeHandler = () => {
+		try {
+			API.put('/articulo/' + id + '/like', { userId: user._id }).then((res) => {
+				getFreeDetail();
+				console.log('esto vale like ' + like);
+			});
+		} catch (err) {}
+	};
 
 	return (
 		<>
 			<PostDetailCardElement>
+				{console.log(likeslenght)}
 				<div className='profile_img_container-detail'>
 					{post.image !== 'undefined' ? (
 						<img
@@ -47,6 +81,17 @@ const PostDetailCard = ({ post }) => {
 						)}
 					</DescriptionDetail>
 				</RightContent>
+				<div className='postBottomLeft'>
+					<img
+						className='likeIcon'
+						src='https://i.ibb.co/t8Jrcjn/like-heart-thumbs-up-favourite-icon-142417.png'
+						onClick={likeHandler}
+						alt='like'
+					/>
+					<span className='postLikeCounter'>
+						{likeslenght.length} people like it
+					</span>
+				</div>
 
 				<Comentario postComentario={post} />
 			</PostDetailCardElement>
