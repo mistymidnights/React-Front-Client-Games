@@ -1,3 +1,4 @@
+import Comentario from '../../components/Comentario/Comentario';
 import '../../Games.css';
 import {
 	DescriptionDetail,
@@ -46,6 +47,8 @@ const PostDetailCard = ({ post }) => {
 						)}
 					</DescriptionDetail>
 				</RightContent>
+
+				<Comentario postComentario={post} />
 			</PostDetailCardElement>
 		</>
 	);
