@@ -103,6 +103,7 @@
 .TitleHero {
 	font-family: 'Kiona';
 	font-size: 35px;
+	padding: 20px;
 }
 
 .imgGamesContnainer {
@@ -170,6 +171,10 @@
 	left: -204px;
 	transform: rotate(17deg);
 	z-index: 2;
+}
+
+#subTitleMain2 {
+	display: none;
 }
 
 /* --------- HERO 3 ----------- */

@@ -5,66 +5,66 @@ import {
 } from './Header.element';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import ButtonDespegable from '../UI/ButtonDesplegable/ButtonDespegable';
-import { BsFillMusicPlayerFill, BsPlayFill } from 'react-icons/bs';
+import { BsPlayFill } from 'react-icons/bs';
 import H1Custom from '../UI/H1Custom/H1Custom';
 import { Link, useNavigate } from 'react-router-dom';
-import { MdHelp } from 'react-icons/md';
-import { FiRadio } from 'react-icons/fi';
-import RenderBot from '../RenderBot/RenderBot';
+// import { MdHelp } from 'react-icons/md';
+// import { FiRadio } from 'react-icons/fi';
+// import RenderBot from '../RenderBot/RenderBot';
 import { useState, useContext } from 'react';
-import RenderPlaylist from '../RenderPlaylist/RenderPlaylist';
-import RenderFavPodcast from '../RenderFavPodcast/RenderFavPodcast';
+// import RenderPlaylist from '../RenderPlaylist/RenderPlaylist';
+// import RenderFavPodcast from '../RenderFavPodcast/RenderFavPodcast';
 import { JwtContext } from '../../context/jwtContext';
 
 const Header = ({ toggleTheme }) => {
-	const [chatBot, setChatBot] = useState();
-	const [playlist, setPlaylist] = useState();
-	const [favPodcast, setFavPodcast] = useState();
+	// const [chatBot, setChatBot] = useState();
+	// const [playlist, setPlaylist] = useState();
+	// const [favPodcast, setFavPodcast] = useState();
 
 	const { user, logout } = useContext(JwtContext);
 	const navigate = useNavigate();
 
-	const myFunction = () => {
-		playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
-		const hide = document.querySelector('.playlist');
-		if (playlist === 'none') hide.style.display = playlist;
+	// const myFunction = () => {
+	// 	playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
+	// 	const hide = document.querySelector('.playlist');
+	// 	if (playlist === 'none') hide.style.display = playlist;
 
-		favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
-		const hideTwo = document.querySelector('.podcast');
-		if (favPodcast === 'none') hideTwo.style.display = favPodcast;
+	// 	favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
+	// 	const hideTwo = document.querySelector('.podcast');
+	// 	if (favPodcast === 'none') hideTwo.style.display = favPodcast;
 
-		chatBot === 'none' ? setChatBot('block') : setChatBot('none');
-		const cambio = document.querySelector('.renderContainer');
-		cambio.style.display = chatBot;
-	};
+	// 	chatBot === 'none' ? setChatBot('block') : setChatBot('none');
+	// 	const cambio = document.querySelector('.renderContainer');
+	// 	cambio.style.display = chatBot;
+	// };
 
-	const myFunctionPlaylist = () => {
-		chatBot === 'block' ? setChatBot('none') : setChatBot('none');
-		const hide = document.querySelector('.renderContainer');
-		if (chatBot === 'none') hide.style.display = chatBot;
+	// const myFunctionPlaylist = () => {
+	// 	chatBot === 'block' ? setChatBot('none') : setChatBot('none');
+	// 	const hide = document.querySelector('.renderContainer');
+	// 	if (chatBot === 'none') hide.style.display = chatBot;
 
-		favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
-		const hideTwo = document.querySelector('.podcast');
-		if (favPodcast === 'none') hideTwo.style.display = favPodcast;
+	// 	favPodcast === 'block' ? setFavPodcast('none') : setFavPodcast('none');
+	// 	const hideTwo = document.querySelector('.podcast');
+	// 	if (favPodcast === 'none') hideTwo.style.display = favPodcast;
 
-		playlist === 'none' ? setPlaylist('block') : setPlaylist('none');
-		const cambio = document.querySelector('.playlist');
-		cambio.style.display = playlist;
-	};
+	// 	playlist === 'none' ? setPlaylist('block') : setPlaylist('none');
+	// 	const cambio = document.querySelector('.playlist');
+	// 	cambio.style.display = playlist;
+	// };
 
-	const myFunctionFavPodcast = () => {
-		chatBot === 'block' ? setChatBot('none') : setChatBot('none');
-		const hide = document.querySelector('.renderContainer');
-		if (chatBot === 'none') hide.style.display = chatBot;
+	// const myFunctionFavPodcast = () => {
+	// 	chatBot === 'block' ? setChatBot('none') : setChatBot('none');
+	// 	const hide = document.querySelector('.renderContainer');
+	// 	if (chatBot === 'none') hide.style.display = chatBot;
 
-		playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
-		const hideTwo = document.querySelector('.playlist');
-		if (playlist === 'none') hideTwo.style.display = playlist;
+	// 	playlist === 'block' ? setPlaylist('none') : setPlaylist('none');
+	// 	const hideTwo = document.querySelector('.playlist');
+	// 	if (playlist === 'none') hideTwo.style.display = playlist;
 
-		favPodcast === 'none' ? setFavPodcast('block') : setFavPodcast('none');
-		const cambio = document.querySelector('.podcast');
-		cambio.style.display = favPodcast;
-	};
+	// 	favPodcast === 'none' ? setFavPodcast('block') : setFavPodcast('none');
+	// 	const cambio = document.querySelector('.podcast');
+	// 	cambio.style.display = favPodcast;
+	// };
 
 	return (
 		<HeaderContainer>
@@ -134,7 +134,7 @@ const Header = ({ toggleTheme }) => {
 						</H1Custom>
 					</ButtonDespegable>
 
-					<RenderBot />
+					{/* <RenderBot />
 					<div onClick={myFunction}>
 						<ButtonDespegable
 							className='Help'
@@ -180,7 +180,7 @@ const Header = ({ toggleTheme }) => {
 								<BsFillMusicPlayerFill fontSize={'35px'} />
 							</H1Custom>
 						</ButtonDespegable>
-					</div>
+					</div> */}
 				</div>
 			</HeaderElement>
 		</HeaderContainer>

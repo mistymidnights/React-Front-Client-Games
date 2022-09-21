@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ButtonStyle from '../UI/ButtonStyle/Button';
 import Imagen from '../UI/Imagen/Imagen';
@@ -21,42 +20,42 @@ const HeroTwo = () => {
 						/>
 						<img
 							className='imgGamesContnainer'
-							src='https://cdn.tutsplus.com/cdn-cgi/image/width=600/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/44.jpg'
+							src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663321123/game/y1cdrg6iprpowku2dx8w.jpg'
 							alt=''
 						/>
-						<P1Custom>likes</P1Custom>
+						{/* <P1Custom>likes</P1Custom> */}
 					</div>
 					<div className='detailCard' id='game2Hero'>
 						<img
 							className='imgGamesContnainer'
-							src='https://cdn.tutsplus.com/cdn-cgi/image/width=600/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/44.jpg'
+							src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663321369/game/lqfuendkzoqhajpi9uur.jpg'
 							alt=''
 						/>
-						<P1Custom>likes</P1Custom>
+						{/* <P1Custom>likes</P1Custom> */}
 					</div>
 					<div className='detailCard' id='game3Hero'>
 						<img
 							className='imgGamesContnainer'
-							src='https://cdn.tutsplus.com/cdn-cgi/image/width=600/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/44.jpg'
+							src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663322565/game/vdx78yt5pkmqrt1j0s5q.jpg'
 							alt=''
 						/>
-						<P1Custom>likes</P1Custom>
+						{/* <P1Custom>likes</P1Custom> */}
 					</div>
 					<div className='detailCard' id='game4Hero'>
 						<img
 							className='imgGamesContnainer'
-							src='https://cdn.tutsplus.com/cdn-cgi/image/width=600/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/44.jpg'
+							src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663322746/game/etdvtxbwhkvbim7xobl9.jpg'
 							alt=''
 						/>
-						<P1Custom>likes</P1Custom>
+						{/* <P1Custom>likes</P1Custom> */}
 					</div>
 					<div className='detailCard' id='game5Hero'>
 						<img
 							className='imgGamesContnainer'
-							src='https://cdn.tutsplus.com/cdn-cgi/image/width=600/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/44.jpg'
+							src='https://res.cloudinary.com/dq186ej4c/image/upload/v1663321980/game/hdbszwnof7gnfzqc2iww.jpg'
 							alt=''
 						/>
-						<P1Custom>likes</P1Custom>
+						{/* <P1Custom>likes</P1Custom> */}
 					</div>
 				</div>
 				<div className='titleWBtn'>
@@ -72,7 +71,7 @@ const HeroTwo = () => {
 						<Imagen
 							className='postCard'
 							src={
-								'https://cdn.akamai.steamstatic.com/steam/apps/1462570/ss_ac25277f95e6dde71a5ddafd933edbd78f0b409c.1920x1080.jpg?t=1662047426'
+								'https://res.cloudinary.com/dq186ej4c/image/upload/v1663338577/game/pzzhvexigs1lrjr0rjpt.jpg'
 							}
 							aspectRatio={'16:9'}
 							height={'370px'}
@@ -80,10 +79,12 @@ const HeroTwo = () => {
 							borderRadius={'15px'}
 						>
 							<div style={{ top: '60%', left: '0' }}>
-								<h2 className='backTitlePostMAIN'>Lost in random</h2>
+								<h2 className='backTitlePostMAIN'>
+									he Last of Us Part 1 Uses PlayStation 5's Haptic Feedback to
+									Help Deaf Gamers
+								</h2>
 								<p className='backTitlePost'>
-									dhsgadhjsa hgdashdgsa dghsagdhas gdhsagdhjasg dghsagdhsagdh
-									dghsagdhsa dghsadghsagdh asdhasjgdshagdhjsagdhj
+									he PS5 remake improves accessibility in unique ways.
 								</p>
 							</div>
 						</Imagen>
@@ -93,7 +94,7 @@ const HeroTwo = () => {
 							<Imagen
 								className='postCard'
 								src={
-									'https://cdn.akamai.steamstatic.com/steam/apps/1462570/ss_ac25277f95e6dde71a5ddafd933edbd78f0b409c.1920x1080.jpg?t=1662047426'
+									'https://res.cloudinary.com/dq186ej4c/image/upload/v1663339450/game/mez07sagftkaclr5kwng.jpg'
 								}
 								aspectRatio={'16:9'}
 								width={'297px'}
@@ -101,17 +102,17 @@ const HeroTwo = () => {
 								borderRadius={'15px'}
 							>
 								<div style={{ top: '60%', left: '0' }}>
-									<h2 className='backTitlePostMAIN'>Lost in random</h2>
-									<p className='backTitlePost'>
-										dhsgadhjsa hgdashdgsa dghsagdhas gdhsagdhjasg dghsagdhsagdh
-										dghsagdhsa dghsadghsagdh asdhasjgdshagdhjsagdhj
+									<h2 className='backTitlePostMAIN'>Sonic Frontiers</h2>
+									<p className='backTitlePost' id='subTitleMain'>
+										Sega itself appears to have leaked a November release date
+										for Sonic Frontiers after a new trailer
 									</p>
 								</div>
 							</Imagen>
 							<Imagen
 								className='postCard'
 								src={
-									'https://cdn.akamai.steamstatic.com/steam/apps/1462570/ss_ac25277f95e6dde71a5ddafd933edbd78f0b409c.1920x1080.jpg?t=1662047426'
+									'https://res.cloudinary.com/dq186ej4c/image/upload/v1663340467/game/ixdv8emnrx1s1v2zpgoi.jpg'
 								}
 								aspectRatio={'16:9'}
 								width={'297px'}
@@ -119,8 +120,10 @@ const HeroTwo = () => {
 								borderRadius={'15px'}
 							>
 								<div style={{ top: '60%', left: '0' }}>
-									<h2 className='backTitlePostMAIN'>Lost in random</h2>
-									<p className='backTitlePost'>
+									<h2 className='backTitlePostMAIN'>
+										NBA 2K23 Perfectly Simulates 1980s{' '}
+									</h2>
+									<p className='backTitlePost' id='subTitleMain2'>
 										dhsgadhjsa hgdashdgsa dghsagdhas gdhsagdhjasg dghsagdhsagdh
 										dghsagdhsa dghsadghsagdh asdhasjgdshagdhjsagdhj
 									</p>
