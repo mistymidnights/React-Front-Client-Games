@@ -37,7 +37,9 @@ const Login = () => {
 		<LoginSection>
 			<FormContainer>
 				<FormElement onSubmit={handleSubmit(formSubmit)}>
-					<label htmlFor='nick'>nick</label>
+					<label className='InputRegister' htmlFor='nick'>
+						nick
+					</label>
 					<input
 						type='text'
 						id='nick'
@@ -45,7 +47,9 @@ const Login = () => {
 						{...register('nick')}
 					></input>
 
-					<label htmlFor='password'>Password</label>
+					<label className='InputRegister' htmlFor='password'>
+						Password
+					</label>
 					<input
 						type='password'
 						id='password'

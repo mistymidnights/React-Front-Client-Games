@@ -9,8 +9,8 @@ const GameDetailCard = ({ game }) => {
 	console.log(game);
 	return (
 		<>
-			<GameDetailCardElement>
-				<div className='profile_img_container'>
+			<GameDetailCardElement id='GameDetail'>
+				<div className='profile_img_container' id='profile_img_container'>
 					{game.image !== 'undefined' ? (
 						<img className='imageCardGame' src={game.image} alt={game.name} />
 					) : (

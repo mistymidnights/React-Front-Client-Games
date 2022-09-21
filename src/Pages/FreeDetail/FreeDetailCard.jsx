@@ -50,7 +50,7 @@ const FreeDetailCard = ({ free }) => {
 							</a>
 						)}
 					</div>
-					<DescriptionDetailFree>
+					<DescriptionDetailFree id='DescriptionFree'>
 						{!free.short_description ? (
 							<p className='descripcionText'>Not launched</p>
 						) : (

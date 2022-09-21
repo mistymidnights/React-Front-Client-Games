@@ -2,18 +2,19 @@ import styled from '@emotion/styled';
 
 export const LoginSection = styled.div`
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
-	height: 100vh;
 	background-color: var(--secondary-back);
 	color: var(--text-color);
-	padding-top: 190px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-height: 809px;
 `;
 
 export const FormContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 442px;
+	width: 342px;
 	gap: 23px;
 	padding: 60px;
 	box-shadow: rgb(0 0 0 / 25%) 4px 3px 10px;

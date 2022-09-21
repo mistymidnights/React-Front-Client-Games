@@ -4,16 +4,17 @@ export const RegisterSection = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 	background-color: var(--secondary-back);
 	color: var(--text-color);
-	padding-top: 100px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-height: 809px;
 `;
 
 export const FormContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 442px;
+	width: 342px;
 	gap: 23px;
 	padding: 60px;
 	box-shadow: rgb(0 0 0 / 25%) 4px 3px 10px;
@@ -36,7 +37,7 @@ export const FormElement = styled.form`
 export const ButtonSubmit = styled.button`
 	padding: 0.5em;
 	color: #ffffff;
-	background: #000000;
+	background: #5d0f71;
 	border: none;
 	border-radius: 10px;
 	width: 30%;
@@ -44,7 +45,7 @@ export const ButtonSubmit = styled.button`
 	margin-bottom: 0.5em;
 	margin-top: 40px;
 	&&:hover {
-		color: black;
-		background-color: #87b7e1;
+		color: white;
+		background-color: #b32222;
 	}
 `;

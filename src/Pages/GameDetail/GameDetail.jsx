@@ -23,7 +23,7 @@ const GameDetail = () => {
 
 	return (
 		<>
-			<HeroDetail>
+			<HeroDetail id='HeroDetail'>
 				{gameDetail ? (
 					<GameDetailCard game={gameDetail} />
 				) : (

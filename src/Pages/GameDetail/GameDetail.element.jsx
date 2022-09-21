@@ -5,7 +5,7 @@ export const HeroDetail = styled.div`
 	min-height: 1000px;
 	display: flex;
 	flex-direction: column;
-	padding: 60px;
+	padding: 186px 60px 60px 60px;
 	justify-content: center;
 	align-items: center;
 `;

@@ -52,9 +52,9 @@ const Profile = () => {
 
 	return (
 		<>
-			<HeroProfile>
+			<HeroProfile id='HeroProfile'>
 				<ProfileSection className='profile'>
-					<ImageProfile className='container_profile'>
+					<ImageProfile id='ImageProfile' className='container_profile'>
 						<div className='left-container-profile'>
 							<div className='container_image_profile'>
 								<img
